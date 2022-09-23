@@ -1,0 +1,292 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacolod</title>
+
+        <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script> -->
+    </head>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body {
+            background-color: #fce7ad;
+        }
+        .amenites {
+        }
+        .wghf{
+            background-color: #fce7ad;
+        }
+        .arrow {
+            border: solid #04c860;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 5px;
+        }
+        .up {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .smbtn {
+            background-color: transparent;
+            border: none;
+            color: #04c860 ;
+            margin: 0;
+        }
+        .toshow {
+            animation-name: viewmore;
+            animation-duration: 1s;
+        }
+        .hidden {
+            display: none;
+        }
+        @keyframes viewmore {
+            from {opacity: 0 ;}
+            to {opacity: 1 ;}
+        }
+        .hrsgtext {
+            font-family: Semringah;
+            font-size: 40px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00a84f;
+            padding-top: 40px;
+            margin: 0;
+        }
+        .prsgtext {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: .93px;
+            color: #343434;
+            text-align: center;
+            max-width: 1400px;
+            margin: auto;
+            padding: 10px 0;
+        }
+        .listslide {
+            max-height: 300px;
+        }
+        .contentslide {
+            padding: 0 100px;
+        }
+        .titleslide {
+            font-family: Semringah;
+            color: #f37021;
+        }
+    </style>
+
+    <body>
+        <div class="body">
+            <h1 class="hrsgtext">Go Hotels Bacolod</h1>
+    
+            <p class="prsgtext">Bacolod City is known as the “City of Smiles” and Go Hotels Bacolod wants to keep the smiles coming with its incomparable service and budget-friendly accommodations.</p>
+    
+            <p class="prsgtext" >Established in 2012, this essential-service hotel in Bacolod is equipped with all the amenities that smart travelers demand. Go Hotels Bacolod is located on the northern side of Bacolod, just 30 minutes away from Bacolod–Silay International Airport.</p>
+    
+            <p class="prsgtext">As with all Go Hotels properties, rooms are equipped with Wi-Fi, letting you stay connected for work or for play. Go Hotels Bacolod is also located close to Robinsons Place Bacolod as well as other local points of interest.</p>
+    
+            <div class="prsgtext">
+                <img alt="" src="https://www.gohotels.ph/sites/default/files/Safe%20Travels%20Stamp%20-%20120x120.png" />
+                <img alt="" src="https://www.gohotels.ph/sites/default/files/agoda%20bcd%20120x120.png" />
+                <img alt="" src="https://www.gohotels.ph/sites/default/files/bcm%20bcd%20120x120_0.png" />
+            </div>
+    
+            <p class="hrsgtext">When Is the Best Time to Visit Bacolod?</p>
+    
+            <p class="prsgtext">Most locals would agree that October would be the best time to visit Bacolod. This is because October is the month when the world-famous MassKara festival is observed.</p>
+    
+            <p class="prsgtext">During MassKara, various events such as food festivals, cultural shows, street dancing, street parties, and free concerts are held in the weeks leading up to the culmination of the festival on the last Sunday of October. The end of the festival coincides neatly with the school semestral break and the observance of All Saints’ and All Souls’ Day, both of which are special days for pious Catholic Filipinos.</p>
+    
+            <p class="toshow hidden prsgtext">If you're planning to visit Bacolod for MassKara, make sure to book your room at Go Hotels a few months in advance. MassKara attracts hundreds of thousands of tourists each year, so hotels in Bacolod are usually fully booked at this time, especially the ones located in ideal spots such as Go Hotels.</p>
+    
+            <p class="toshow hidden prsgtext">If you're not able to make the MassKara festival this year, don't worry. Bacolod has mild weather all year round, which makes it a nice place to visit at virtually any time of the year. The rainiest months tend to be from June to October and the hottest months are from March to April. The coolest and driest time of the year tends to be January, so schedule your trip around that time if you’re planning outdoor activities.</p>
+    
+            <div class="prsgtext"><button class="smbtn" id="smbtn">show more <i class="arrow down"></i></button></div>
+        </div>
+
+        <div class="amenites">
+            <p class="hrsgtext">Why Choose Go Hotels in Bacolod?</p>
+    
+            <p class="prsgtext">Whether you're traveling to Bacolod or any other place, accommodations are probably going to take up much of your budget. If you’re a budget-minded traveler that demands good quality service, Go Hotels Bacolod is sure to meet your needs.</p>
+            <p class="prsgtext">Here are three reasons to choose Go Hotels in Bacolod:</p>
+            <section class="splide whychoose prsgtext" aria-label="Basic Structure">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+                    </button>
+              </div>
+                <div class="splide__track">
+                    <ul class="splide__list listslide">
+                        <li class="splide__slide">
+                            <p class="titleslide " >High Service Standards</p>
+                            <p class="contentslide " >All Go Hotels locations provide a high standard of service even at budget rates. As part of a major national chain of hotels, Go Hotels Bacolod offers a consistent level of service in line with all the other Go Hotels in the Philippines. If you’ve been to a Go Hotels branch anywhere else in the country, you can expect the same level of excellence at Go Hotels Bacolod.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Big Savings</p>
+                            <p class="contentslide " >Go Hotels consistently offers excellent value for money, giving you a restful place to serve as your temporary home away from home. All the usual hotel amenities are included and room rates are competitively priced for the level of service delivered.</p>
+                            <p class="contentslide " >The excellent value of Go Hotels is especially clear when you consider the locations of each hotel. Most Go Hotels are optimally located near local points of interest or transportation routes and Go Hotels Bacolod is no different. If you’re looking to save time and economize your transportation budget, Go Hotels Bacolod is a safe choice.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">High Service Standards</p>
+                            <p class="contentslide " >All Go Hotels locations provide a high standard of service even at budget rates. As part of a major national chain of hotels, Go Hotels Bacolod offers a consistent level of service in line with all the other Go Hotels in the Philippines. If you’ve been to a Go Hotels branch anywhere else in the country, you can expect the same level of excellence at Go Hotels Bacolod.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="wghf">
+            <p class="hrsgtext">Who Is Go Hotels For?</p>
+    
+            <p class="prsgtext">If you’re looking for hotels in Bacolod that offer welcome amenities at reasonable rates, Go Hotels should be on top of your list. Go Hotels offers a range of high-quality accommodations perfect for different types of budget-conscious travelers.</p>
+            <p class="prsgtext">If you’re planning a trip to Bacolod, consider Go Hotels if you’re one of the traveler types below:</p>
+            <section class="splide whogo prsgtext" aria-label="">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+                    </button>
+              </div>
+                <div class="splide__track">
+                    <ul class="splide__list listslide">
+                        <li class="splide__slide">
+                            <p class="titleslide " >Business Travelers</p>
+                            <p class="contentslide " >Go Hotels’s rooms are perfect for business travelers in need of a restful night’s sleep. The reasonable room rates allow you to keep your expense account well within budget, and the inclusion of high-speed Wi-Fi connections makes it easy to unwind or catch up with work. Consider booking at Go Hotels the next time you’re in Bacolod for a site visit, convention, or other work-related activity.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Solo Travelers</p>
+                            <p class="contentslide " >Rooms at Go Hotels offer you peace, quiet, and privacy as well as a range of key comforts. If you want to spend most of your travel budget dining out or seeing the sights in Bacolod, Go Hotels needs to be on your shortlist. </p>
+
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Traveling Couples</p>
+                            <p class="contentslide " >Want to spend more of your budget traveling around Negros and eating at Bacolod’s nationally acclaimed dining spots with your spouse or partner? Budget-minded couples will appreciate Go Hotels’s cozy yet affordable rooms.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Small Groups</p>
+                            <p class="contentslide " >If all you need to enjoy your Bacolod trip is each other’s company, a budget room at Go Hotels is your best bet. Go Hotels is also located in a central part of the city, making it perfect as a home base for your barkada getaway.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="ssbc">
+            <p class="hrsgtext">Sights to See around Bacolod City</p>
+    
+            <p class="prsgtext">Below are a few local sites that are within close proximity to Go Hotels Bacolod. Many of these locations can be reached by public transport or on foot. There are also taxi services that can take you anywhere in Bacolod for a reasonable fee. Please feel free to ask our staff for directions.</p>
+            <section class="splide tosee prsgtext" aria-label="">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+                    </button>
+              </div>
+                <div class="splide__track">
+                    <ul class="splide__list listslide">
+                        <li class="splide__slide">
+                            <p class="titleslide " >Negros Museum</p>
+                            <p class="contentslide " >The Negros Museum's unique collection of artifacts gives you a glimpse of what life was like for the elite families of Negros during the late 19th and early 20th centuries. The museum also delves extensively into the culture surrounding sugar, the island’s main cash crop and a symbol of Negros. It also has an art gallery that features rotating collections of works from Negrense artists.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Capitol Park and Lagoon</p>
+                            <p class="contentslide " >The Capitol Park and Lagoon (or simply the “Lagoon” as Bacolodnons call it) is a large park located in front of the Negros Occidental Provincial Capitol. The capitol building features neoclassical architecture similar to that of other American colonial-era buildings constructed in the early 20th century.</p>
+                            <p class="contentslide " >The park features an enormous man-made fishpond as its focal point. This public space is well-appointed with benches, assembly areas, and spots for exercise and recreation. </p>
+                            <p class="contentslide " >If you’re traveling with children or want a more relaxing diversion, you can buy puffed rice from surrounding vendors to feed the fish in the pond. If you’re in search of quality pasalubong the Negros Showroom is located just across Lacson Street, at the east side of the Lagoon.</p>
+
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Manokan Country</p>
+                            <p class="contentslide " >Bacolod City is a food lover's paradise, and it may be impossible to sample every “must-try” item in a month, let alone a weekend. However, most locals would agree that Manokan Country is a place you shouldn’t miss.</p>
+                            <p class="contentslide " >Located in Bacolod’s reclamation area, Manokan Country is a row of restaurants that serve chicken inasal, arguably the city’s signature dish. Each of the chicken inasal joints at Manokan Country has its own take on the dish, but you can’t go wrong with any of the restaurants located here. </p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Old Pala-Pala Market</p>
+                            <p class="contentslide " >If fresh seafood is more your thing, Bacolod’s Old Pala-Pala Market won’t disappoint. For decades, this public market has been a go-to for quality-conscious chefs at the city’s hundreds of restaurants. But if you can’t cook, don’t worry — you can have your fresh seafood cooked just the way you like it by any of the dozens of cooks at the market. </p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Bacolod City Plaza and San Sebastian Cathedral</p>
+                            <p class="contentslide " >The San Sebastian Cathedral is a symbol of Bacolod City and is a rare example of a 19th-century cathedral built in a Baroque style. It overlooks the Bacolod City Plaza, a popular rest spot for locals. The cathedral and plaza both contain markers for various historic events that happened in Bacolod and are culturally important for most native Bacolodnons.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Heritage Houses</p>
+                            <p class="contentslide " >While The Ruins is rightfully one of the area’s most popular tourist attractions, there are dozens of other intact heritages houses dating back to the late 19th and early 20th centuries scattered all over Bacolod as well as in nearby Talisay (the site of The Ruins) and Silay. Many of these houses are in a remarkable state of preservation, and many are still inhabited by the descendants of the families that built them. </p>
+                            <p class="contentslide " >Silay City has an especially remarkable collection of these well-maintained heritage houses, given the closeness of these structures. Given that Bacolod–Silay International Airport is only 30 minutes away from Go Hotels Bacolod, it’s a great idea to make these houses your last stop before departing Negros.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="titleslide ">Negros Forests and Ecological Foundation Biodiversity Conservation Center</p>
+                            <p class="contentslide " >Located next to the Lagoon, the Negros Forests and Ecological Foundation Biodiversity Conservation Center is a wildlife rescue and conservation center that houses native species, including some of the world’s rarest animals. </p>
+                            <p class="contentslide " >The center is home to an impressive collection of endangered animals including several bird species, giant golden-crowned flying foxes (Acerodon jubatus), and Visayan leopard cats (Prionailurus javanensis sumatranus). </p>
+                            <p class="contentslide " >Notably, it is home to breeding pairs of the world’s rarest deer, the Visayan spotted deer (Rusa alfredi), and the world’s rarest pig, the Negros subspecies of the Visayan warty pig (Sus cebifrons negrinus).</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="body">
+            <p class="hrsgtext">Happy to CARE</p>
+    
+            <p class="prsgtext">Whether you’re booking a stay at our hotel in Bacolod or any of the other <a href="https://www.gohotels.ph/go-hotels/happy-to-care/list-operational-hotels">Go Hotels locations in the Philippines,</a> you can rest assured that you’ll receive service that goes above and beyond. </p>
+    
+            <p class="prsgtext">Robinsons Hotels and Resorts is committed to delivering CARE, which means to Create A Remarkable Experience. The idea behind CARE is to ensure that the needs of every Juan are met with a high level of service that also addresses the needs of the environment and the wider community.</p>
+
+            <p class="prsgtext">To book your stay at Go Hotels, contact our Customer Service Team or book online through the Go Hotels Website.</p>
+    
+        
+        </div>
+    </body>
+
+    <script>
+        let showeds = false
+        const btn = document.getElementById("smbtn")
+        const toshow = document.querySelectorAll(".toshow")
+        btn.addEventListener("click", ()=> {
+            if(showeds) {
+                btn.innerHTML = 'show more <i class="arrow down"></i>'
+                showeds = false
+                toshow.forEach(el=> el.classList.add("hidden"))
+            }
+            else {
+                btn.innerHTML = 'show less <i class="arrow up"></i>'
+                showeds = true
+                toshow.forEach(el=> el.classList.remove("hidden"))
+            }
+        })
+        new Splide( '.whychoose', {
+
+        } ).mount()
+        new Splide(".whogo").mount()
+        new Splide(".tosee").mount()
+    </script>
+
+
+</html>
