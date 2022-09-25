@@ -34,7 +34,11 @@
             margin: auto;
         }
       
-       
+       .more {
+        display: none;
+        animation-name: viewmore;
+        animation-duration: 1s;
+       }
         .hrsgtext {
             font-family: Semringah;
             font-size: 40px;
@@ -60,20 +64,20 @@
             text-align: center;
             padding: 10px 0;
         }
-        
-        /* class Accordion */
-        .toshow {
-            animation-name: viewmore;
-            animation-duration: 1s;
+        .contentslide {
+            margin-bottom: 0;
         }
-        .smbtn {
+        .myBtn {
             background-color: transparent;
             border: none;
             color: #04c860 ;
             margin: 0;
+            font-size: 20px;
         }
-
-         /* class Drawer */
+        .myBtn:hover {
+            border-radius: 50px;
+            padding: 0 10px;
+        }
          .titledraw {
             border: none;
             background-color: transparent ;
@@ -96,20 +100,6 @@
             position: relative;
             transition: all 500ms ease-in-out;
         }
-        .drawerbtn {
-            position: absolute;
-            bottom: -28px;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-            border: none;
-            color: #00a84f;
-            display: block;
-        }
-        /* class Splide */
-        .listslide {
-            max-height: 500px;
-        }
         .slidewraper {
             padding: 0 100px;
         }
@@ -117,9 +107,6 @@
             font-family: Semringah;
             color: #f37021;
             margin-top: 10px;
-        }
-        .listwghf {
-            max-height: 400px;
         }
         /*  Animation */
         @keyframes viewmore {
@@ -130,17 +117,17 @@
 
     <body>
 <div class="wbtv">
-    <div class="ghh-wrapper">
+    <div class="ghh-wrapper wbtvreadmore">
         <p class="hrsgtext">When Is the Best Time to Visit Bacolod?</p>
-        <p class="prsgtext">Most locals would agree that October would be the best time to visit Bacolod. This is because October is the month when the world-famous MassKara festival is observed.</p>
-        <p class="prsgtext">During MassKara, various events such as food festivals, cultural shows, street dancing, street parties, and free concerts are held in the weeks leading up to the culmination of the festival on the last Sunday of October. The end of the festival coincides neatly with the school semestral break and the observance of All Saints’ and All Souls’ Day, both of which are special days for pious Catholic Filipinos.</p>
-        <p class="prsgtext">If you're planning to visit Bacolod for MassKara, make sure to book your room at Go Hotels a few months in advance. MassKara attracts hundreds of thousands of tourists each year, so hotels in Bacolod are usually fully booked at this time, especially the ones located in ideal spots such as Go Hotels.</p>
-        <p class="prsgtext">If you're not able to make the MassKara festival this year, don't worry. Bacolod has mild weather all year round, which makes it a nice place to visit at virtually any time of the year. The rainiest months tend to be from June to October and the hottest months are from March to April. The coolest and driest time of the year tends to be January, so schedule your trip around that time if you’re planning outdoor activities.</p>
+        <div class="drawer" data-height="500">
+            <p class="prsgtext">Most locals would agree that October would be the best time to visit Bacolod. This is because October is the month when the world-famous MassKara festival is observed.<br>During MassKara, various events such as food festivals, cultural shows, street dancing, street parties, and free concerts are held in the weeks leading up to the culmination of the festival on the last Sunday of October. The end of the festival coincides neatly with the school semestral break and the observance of All Saints’ and All Souls’ Day, both of which are special days for pious Catholic Filipinos.<span class="more"><br>If you're planning to visit Bacolod for MassKara, make sure to book your room at Go Hotels a few months in advance. MassKara attracts hundreds of thousands of tourists each year, so hotels in Bacolod are usually fully booked at this time, especially the ones located in ideal spots such as Go Hotels.<br>If you're not able to make the MassKara festival this year, don't worry. Bacolod has mild weather all year round, which makes it a nice place to visit at virtually any time of the year. The rainiest months tend to be from June to October and the hottest months are from March to April. The coolest and driest time of the year tends to be January, so schedule your trip around that time if you’re planning outdoor activities.</span><span class="dots">...</span></p>
+            <button class="myBtn" style="width:100%;">Read more</button>
+        </div>
     </div>
 </div>
 
 <div class="wcgh">
-    <div class="ghh-wrapper">
+    <div class="ghh-wrapper wcghreadmore">
         <p class="hrsgtext">Why Choose Go Hotels in Bacolod?</p>
         <p class="prsgtext">Whether you're traveling to Bacolod or any other place, accommodations are probably going to take up much of your budget. If you’re a budget-minded traveler that demands good quality service, Go Hotels Bacolod is sure to meet your needs.</p>
         <p class="prsgtext">Here are three reasons to choose Go Hotels in Bacolod:</p>
@@ -148,11 +135,17 @@
         <div class="row prsgtext">
             <div class="col">
                 <div class="titledraw" ><img src="/check-in.png" height="100px"><br>High Service Standards </div>
-                <p class="contentdraw drawer" >All Go Hotels locations provide a high standard of service even at budget rates. As part of a major national chain of hotels, Go Hotels Bacolod offers a consistent level of service in line with all the other Go Hotels in the Philippines. If you’ve been to a Go Hotels branch anywhere else in the country, you can expect the same level of excellence at Go Hotels Bacolod.</p>
+                <div class="drawer" data-height="770">
+                    <p class="contentdraw" >All Go Hotels locations provide a high standard of service even at budget rates. As part of a major national chain of hotels, Go Hotels Bacolod offers a consistent level of service in line with <span class="more"> all the other Go Hotels in the Philippines. If you’ve been to a Go Hotels branch anywhere else in the country, you can expect the same level of excellence at Go Hotels Bacolod.</span><span class="dots">...</span></p>
+                    <button class="myBtn">Read more</button>
+                </div>
             </div>
             <div class="col">
                 <div class="titledraw "><img src="/saving.png" height="100px"><br>Big Savings </div>
-                <p class="contentdraw drawer" >Go Hotels consistently offers excellent value for money, giving you a restful place to serve as your temporary home away from home. All the usual hotel amenities are included and room rates are competitively priced for the level of service delivered.<br>The excellent value of Go Hotels is especially clear when you consider the locations of each hotel. Most Go Hotels are optimally located near local points of interest or transportation routes and Go Hotels Bacolod is no different. If you’re looking to save time and economize your transportation budget, Go Hotels Bacolod is a safe choice.</p>
+                <div class="drawer" data-height="930">
+                    <p class="contentdraw" >Go Hotels consistently offers excellent value for money, giving you a restful place to serve as your temporary home away from home. All the usual hotel amenities are included and room <span class="more">rates are competitively priced for the level of service delivered.<br>The excellent value of Go Hotels is especially clear when you consider the locations of each hotel. Most Go Hotels are optimally located near local points of interest or transportation routes and Go Hotels Bacolod is no different. If you’re looking to save time and economize your transportation budget, Go Hotels Bacolod is a safe choice.</span><span class="dots">...</span></p>
+                    <button class="myBtn">Read more</button>
+                </div>
             </div>
             <div class="col">
                 <div class="titledraw "><img src="/fireplace.png" height="100px"><br>Complete Amenities </div>
@@ -177,12 +170,15 @@
                 </button>
             </div>
             <div class="splide__track">
-                <ul class="splide__list listwghf">
+                <ul class="splide__list wghfreadmore">
                     <li class="splide__slide">
                         <div class="row slidewraper">
                             <div class="col">
                                 <div class="titledraw " ><img src="/busy.png" height="100px"><br>Business Travelers </div>
-                                <p class="contentdraw drawer" >Go Hotels’s rooms are perfect for business travelers in need of a restfdiv night’s sleep. The reasonable room rates allow you to keep your expense account well within budget, and the inclusion of high-speed Wi-Fi connections makes it easy to unwind or catch up with work. Consider booking at Go Hotels the next time you’re in Bacolod for a site visit, convention, or other work-related activity.</p>
+                                <div class="drawer" data-height="470">
+                                    <p class="contentdraw" >Go Hotels’s rooms are perfect for business travelers in need of a restfdiv night’s sleep. The reasonable room rates allow you to keep your expense account well within budget, and the inclusion of high-speed Wi-Fi connections makes it easy to <span class="more"> unwind or catch up with work. Consider booking at Go Hotels the next time you’re in Bacolod for a site visit, convention, or other work-related activity.</span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                             <div class="col">
                                 <div class="titledraw "><img src="/solo.png" height="100px"><br>Solo Travelers </div>
@@ -222,18 +218,24 @@
                 </button>
             </div>
             <div class="splide__track">
-                <ul class="splide__list listslide">
+                <ul class="splide__list ssbcreadmore">
                     <li class="splide__slide">
                         <div class="row slidewraper">
                             <div class="col">
                                 <img src="/museum.png" alt="museum" height="250px">
                                 <p class="titleslide " >Negros Museum</p>
-                                <p class="contentslide drawer" >The Negros Museum's unique collection of artifacts gives you a glimpse of what life was like for the elite families of Negros during the late 19th and early 20th centuries. The museum also delves extensively into the culture surrounding sugar, the island’s main cash crop and a symbol of Negros. It also has an art gallery that features rotating collections of works from Negrense artists.</p>
+                                <div class="drawer" data-height="570">
+                                    <p class="contentslide" >The Negros Museum's unique collection of artifacts gives you a glimpse of what life was like for the elite families of Negros during the late 19th and early 20th centuries. The<span class="more"> museum also delves extensively into the culture surrounding sugar, the island’s main cash crop and a symbol of Negros. It also has an art gallery that features rotating collections of works from Negrense artists.</span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                             <div class="col">
                                 <img src="/maokan.png" alt="maokan" height="250px">
                                 <p class="titleslide ">Capitol Park and Lagoon</p>
-                                <p class="contentslide drawer" >The Capitol Park and Lagoon (or simply the “Lagoon” as Bacolodnons call it) is a large park located in front of the Negros Occidental Provincial Capitol. The capitol building features neoclassical architecture similar to that of other American colonial-era buildings constructed in the early 20th century.<br>The park features an enormous man-made fishpond as its focal point. This public space is well-appointed with benches, assembly areas, and spots for exercise and recreation. <br>If you’re traveling with children or want a more relaxing diversion, you can buy puffed rice from surrounding vendors to feed the fish in the pond. If you’re in search of quality pasalubong the Negros Showroom is located just across Lacson Street, at the east side of the Lagoon.</p>
+                                <div class="drawer" data-height="770">
+                                    <p class="contentslide" >The Capitol Park and Lagoon (or simply the “Lagoon” as Bacolodnons call it) is a large park located in front of the Negros Occidental Provincial Capitol. The <span class="more"> capitol building features neoclassical architecture similar to that of other American colonial-era buildings constructed in the early 20th century.<br>The park features an enormous man-made fishpond as its focal point. This public space is well-appointed with benches, assembly areas, and spots for exercise and recreation. <br>If you’re traveling with children or want a more relaxing diversion, you can buy puffed rice from surrounding vendors to feed the fish in the pond. If you’re in search of quality pasalubong the Negros Showroom is located just across Lacson Street, at the east side of the Lagoon.</span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -242,12 +244,18 @@
                             <div class="col">
                                 <img src="/manokan.png" alt="maokan" height="250px">
                                 <p class="titleslide ">Manokan Country</p>
-                                <p class="contentslide drawer" >Bacolod City is a food lover's paradise, and it may be impossible to sample every “must-try” item in a month, let alone a weekend. However, most locals would agree that Manokan Country is a place you shouldn’t miss.<br>Located in Bacolod’s reclamation area, Manokan Country is a row of restaurants that serve chicken inasal, arguably the city’s signature dish. Each of the chicken inasal joints at Manokan Country has its own take on the dish, but you can’t go wrong with any of the restaurants located here. </p>
+                                <div class="drawer" data-height="660">
+                                    <p class="contentslide" >Bacolod City is a food lover's paradise, and it may be impossible to sample every “must-try” item in a month, let alone a weekend. However, most locals would agree that Manokan <span class="more"> Country is a place you shouldn’t miss.<br>Located in Bacolod’s reclamation area, Manokan Country is a row of restaurants that serve chicken inasal, arguably the city’s signature dish. Each of the chicken inasal joints at Manokan Country has its own take on the dish, but you can’t go wrong with any of the restaurants located here. </span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                             <div class="col">
                                 <img src="/pala.png" alt="maokan" height="250px">
                                 <p class="titleslide ">Old Pala-Pala Market</p>
-                                <p class="contentslide drawer" >If fresh seafood is more your thing, Bacolod’s Old Pala-Pala Market won’t disappoint. For decades, this public market has been a go-to for quality-conscious chefs at the city’s hundreds of restaurants. But if you can’t cook, don’t worry — you can have your fresh seafood cooked just the way you like it by any of the dozens of cooks at the market. </p>
+                                <div class="drawer" data-height="550">
+                                    <p class="contentslide" >If fresh seafood is more your thing, Bacolod’s Old Pala-Pala Market won’t disappoint. For decades, this public market has been a go-to for quality-conscious chefs at the city’s <span class="more"> hundreds of restaurants. But if you can’t cook, don’t worry — you can have your fresh seafood cooked just the way you like it by any of the dozens of cooks at the market. </span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -256,12 +264,18 @@
                             <div class="col">
                                 <img src="/plaza.png" alt="maokan" height="250px">
                                 <p class="titleslide ">Bacolod City Plaza and San Sebastian Cathedral </p>
-                                <p class="contentslide drawer" >The San Sebastian Cathedral is a symbol of Bacolod City and is a rare example of a 19th-century cathedral built in a Baroque style. It overlooks the Bacolod City Plaza, a popular rest spot for locals. The cathedral and plaza both contain markers for various historic events that happened in Bacolod and are culturally important for most native Bacolodnons.</p>
+                                <div class="drawer" data-height="570">
+                                    <p class="contentslide" >The San Sebastian Cathedral is a symbol of Bacolod City and is a rare example of a 19th-century cathedral built in a Baroque style. It overlooks the Bacolod City Plaza, a popular rest <span class="more"> spot for locals. The cathedral and plaza both contain markers for various historic events that happened in Bacolod and are culturally important for most native Bacolodnons.</span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                             <div class="col">
                                 <img src="/mansion.png" alt="maokan" height="250px">
                                 <p class="titleslide ">Heritage Houses</p>
-                                <p class="contentslide drawer" >While The Ruins is rightfully one of the area’s most popular tourist attractions, there are dozens of other intact heritages houses dating back to the late 19th and early 20th centuries scattered all over Bacolod as well as in nearby Talisay (the site of The Ruins) and Silay. Many of these houses are in a remarkable state of preservation, and many are still inhabited by the descendants of the families that built them. <br> Silay City has an especially remarkable collection of these well-maintained heritage houses, given the closeness of these structures. Given that Bacolod–Silay International Airport is only 30 minutes away from Go Hotels Bacolod, it’s a great idea to make these houses your last stop before departing Negros.</p>
+                                <div class="drawer" data-height="750">
+                                    <p class="contentslide" >While The Ruins is rightfully one of the area’s most popular tourist attractions, there are dozens of other intact heritages houses dating back to the late 19th and early 20th <span class="more">  centuries scattered all over Bacolod as well as in nearby Talisay (the site of The Ruins) and Silay. Many of these houses are in a remarkable state of preservation, and many are still inhabited by the descendants of the families that built them. <br> Silay City has an especially remarkable collection of these well-maintained heritage houses, given the closeness of these structures. Given that Bacolod–Silay International Airport is only 30 minutes away from Go Hotels Bacolod, it’s a great idea to make these houses your last stop before departing Negros. </span><span class="dots">...</span></p>
+                                    <button class="myBtn">Read more</button>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -269,10 +283,13 @@
                         <div class="slidewraper">
                             <img src="/garden.png" alt="maokan" height="250px">
                             <p class="titleslide ">Negros Forests and Ecological Foundation Biodiversity Conservation Center</p>
-                            <p class="contentslide drawer" >Located next to the Lagoon, the Negros Forests and Ecological Foundation Biodiversity Conservation Center is a wildlife rescue and conservation center that houses native species, including some of the world’s rarest animals. <br>The center is home to an impressive collection of endangered animals including several bird species, giant golden-crowned flying foxes (Acerodon jubatus), and Visayan leopard cats (Prionailurus javanensis sumatranus). <br>Notably, it is home to breeding pairs of the world’s rarest deer, the Visayan spotted deer (Rusa alfredi), and the world’s rarest pig, the Negros subspecies of the Visayan warty pig (Sus cebifrons negrinus). </p>
+                            <div class="drawer" data-height="600">
+                                <p class="contentslide" >Located next to the Lagoon, the Negros Forests and Ecological Foundation Biodiversity Conservation Center is a wildlife rescue and conservation center that houses native species, including some of the world’s rarest animals. <br>The center is home to an impressive collection of endangered animals including several bird species,<span class="dots">...</span><span class="more"> giant golden-crowned flying foxes (Acerodon jubatus), and Visayan leopard cats (Prionailurus javanensis sumatranus). <br>Notably, it is home to breeding pairs of the world’s rarest deer, the Visayan spotted deer (Rusa alfredi), and the world’s rarest pig, the Negros subspecies of the Visayan warty pig (Sus cebifrons negrinus). </span> </p>
+                                <button class="myBtn">Read more</button>
+                            </div>
                         </div>
                     </li>
-                </ul>
+                </ul> 
             </div>
         </section>
     </div>
@@ -292,30 +309,40 @@
 </body>
 
 <script>
-    function drawer () {
-        document.querySelectorAll(".drawer").forEach(dr=> {
-            let showed = false
-            dr.style.height = "135px"
-            const btn = document.createElement("button")
-            btn.innerText = "read more.."
-            btn.classList.add("drawerbtn")
-            btn.addEventListener("click", ()=> {
-                if(showed) {
-                    dr.style.height = "135px"
-                    btn.innerText = "read more.."
-                    showed = false
-                } else {
-                    dr.style.height = "max-content"
-                    btn.innerText = "read less.."
-                    showed = true
-                }
-            })
-            dr.append(btn)
+function readMore (element, options = {}) {
+    const opt = {height: 500, duration: 300, ...options}
+    const heights = [opt.height]
+    const readMoreEl = document.querySelector(element)
+    const drawers = readMoreEl.querySelectorAll(".drawer")
+    readMoreEl.style.height = opt.height+"px"
+    drawers.forEach(drawerelement=> {
+        const dots = drawerelement.querySelector(".dots");
+        const moreText = drawerelement.querySelector(".more");
+        const btnText = drawerelement.querySelector(".myBtn");
+        btnText.addEventListener("click", ()=> {
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+                heights.splice(heights.indexOf(Number(drawerelement.dataset.height)), 1)
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+                heights.push(Number(drawerelement.dataset.height))
+            }
+            readMoreEl.style.height = Math.max(...heights)+"px"
+            readMoreEl.style.transition = `height ${opt.duration}ms ease-in-out`
         })
-    }
-    drawer()
-new Splide(".whofor", {type   : 'loop',}).mount()
-new Splide(".tosee",{type   : 'loop',}).mount()
+    })
+}
+
+new readMore(".wbtvreadmore", {height: 330})
+new readMore(".wcghreadmore", {height: 650})
+new readMore(".wghfreadmore", {height: 370})
+new readMore(".ssbcreadmore", {height: 480})
+new Splide(".whofor", { type     : 'loop', }).mount()
+new Splide(".tosee",{  type     : 'loop', }).mount()
 </script>
 
 
