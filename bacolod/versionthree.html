@@ -1,0 +1,382 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacolod</title>
+
+        <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    </head>
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ghh-wrapper{
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+      
+       .more {
+        display: none;
+        animation-name: viewmore;
+        animation-duration: 1s;
+       }
+       .splide__list {
+        height: max-content;
+       }
+        .hrsgtext {
+            font-family: Semringah;
+            font-size: 40px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00a84f;
+            margin: 0;
+        }
+        .prsgtext {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: .93px;
+            color: #343434;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contentslide {
+            margin-bottom: 0;
+        }
+        /* readmore */
+        .myBtn {
+            background-color: transparent;
+            border: none;
+            color: #04c860 ;
+            margin: 0;
+            font-size: 20px;
+        }
+        .myBtn:hover {
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+        .titledraw {
+            border: none;
+            background-color: transparent ;
+            font-family: Semringah;
+            color: #f37021;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: all 500ms ease-in-out;
+        }
+        .titledraw img {
+            margin-bottom: 15px;
+        }
+        .titledraw i {
+            padding-bottom: 5px;
+            font-family: 700;
+        }
+        .contentdraw {
+            animation-name: viewmore;
+            animation-duration: 1s;
+        }
+        .drawer {
+            overflow: hidden;
+            position: relative;
+            transition: all 500ms ease-in-out;
+        }
+        .slidewraper {
+            padding: 0 100px;
+        }
+        .titleslide {
+            font-family: Semringah;
+            color: #f37021;
+            margin-top: 10px;
+        }
+        /*  Animation */
+        @keyframes viewmore {
+            from {opacity: 0 ;}
+            to {opacity: 1 ;}
+        }
+    </style>
+
+    <body>
+
+        <div class="accordion ghh-wrapper" id="gohotels-accordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="whychoose">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewcgh" aria-expanded="true" aria-controls="collapsewcgh">
+                    <p class="hrsgtext">Why Choose Go Hotels in Bacolod?</p>
+                </button>
+                </h2>
+                <div id="collapsewcgh" class="accordion-collapse collapse" aria-labelledby="whychoose" data-bs-parent="#gohotels-accordion">
+                <div class="accordion-body">
+                    <p class="prsgtext">Whether you're traveling to Bacolod or any other place, accommodations are probably going to take up much of your budget. If you’re a budget-minded traveler that demands good quality service, Go Hotels Bacolod is sure to meet your needs.</p>
+                    <p class="prsgtext">Here are three reasons to choose Go Hotels in Bacolod:</p>
+                    <div class="row prsgtext ">
+                        <div class="col">
+                            <div class="titledraw" >
+                                <img src="/check-in.png" height="100px">
+                                <br> <i class="bi bi-plus"></i> High Service Standards </i>
+                            </div>
+                            <p class="contentdraw" >All Go Hotels locations provide a high standard of service even at budget rates. As part of a major national chain of hotels, Go Hotels Bacolod offers a consistent level of service in line with all the other Go Hotels in the Philippines. If you’ve been to a Go Hotels branch anywhere else in the country, you can expect the same level of excellence at Go Hotels Bacolod.</p>
+                        </div>
+                        <div class="col">
+                            <div class="titledraw">
+                                <img src="/saving.png" height="100px">
+                                <br> <i class="bi bi-plus"></i> Big Savings </i>
+                            </div>
+                            <p class="contentdraw" >Go Hotels consistently offers excellent value for money, giving you a restful place to serve as your temporary home away from home. All the usual hotel amenities are included and room rates are competitively priced for the level of service delivered.<br>The excellent value of Go Hotels is especially clear when you consider the locations of each hotel. Most Go Hotels are optimally located near local points of interest or transportation routes and Go Hotels Bacolod is no different. If you’re looking to save time and economize your transportation budget, Go Hotels Bacolod is a safe choice.</p>
+                            
+                        </div>
+                        <div class="col">
+                            <div class="titledraw">
+                                <img src="/fireplace.png" height="100px">
+                                <br> <i class="bi bi-plus"></i> Complete Amenities </i>
+                            </div>
+                            <p class="contentdraw " >Go Hotels rooms feature air-conditioning, hot and cold showers, toiletries, Wi-Fi, flat-screen TVs, as well as sanitized, spacious beds. With Go Hotels, you get much more than your money’s worth.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="whois">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewghf" aria-expanded="false" aria-controls="collapsewghf">
+                    <p class="hrsgtext">Who Is Go Hotels For?</p>
+                </button>
+                </h2>
+                <div id="collapsewghf" class="accordion-collapse collapse" aria-labelledby="whois" data-bs-parent="#gohotels-accordion">
+                <div class="accordion-body">
+
+                <p class="prsgtext">If you’re looking for hotels in Bacolod that offer welcome amenities at reasonable rates, Go Hotels should be on top of your list. Go Hotels offers a range of high-quality accommodations perfect for different types of budget-conscious travelers.</p>
+                <p class="prsgtext">If you’re planning a trip to Bacolod, consider Go Hotels if you’re one of the traveler types below:</p>
+                <section class="splide whofor prsgtext" aria-label="">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                            <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="row slidewraper">
+                                    <div class="col">
+                                        <div class="titledraw" >
+                                            <img src="/busy.png" height="100px">
+                                            <br> <i class="bi bi-plus"></i> Business Travelers 
+                                        </div>
+                                            <p class="contentdraw" >Go Hotels’s rooms are perfect for business travelers in need of a restfdiv night’s sleep. The reasonable room rates allow you to keep your expense account well within budget, and the inclusion of high-speed Wi-Fi connections makes it easy to unwind or catch up with work. Consider booking at Go Hotels the next time you’re in Bacolod for a site visit, convention, or other work-related activity.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="titledraw">
+                                            <img src="/solo.png" height="100px">
+                                            <br> <i class="bi bi-plus"></i> Solo Travelers 
+                                        </div>
+                                            <p class="contentdraw " >Rooms at Go Hotels offer you peace, quiet, and privacy as well as a range of key comforts. If you want to spend most of your travel budget dining out or seeing the sights in Bacolod, Go Hotels needs to be on your shortlist. </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="row slidewraper">
+                                    <div class="col">
+                                        <div class="titledraw">
+                                            <img src="/couple.png" height="100px">
+                                            <br> <i class="bi bi-plus"></i> Traveling Couples 
+                                        </div>
+                                            <p class="contentdraw " >Want to spend more of your budget traveling around Negros and eating at Bacolod’s nationally acclaimed dining spots with your spouse or partner? Budget-minded couples will appreciate Go Hotels’s cozy yet affordable rooms.</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="titledraw">
+                                            <img src="/group.png" alt="groups" height="100px"> 
+                                            <br> <i class="bi bi-plus"></i> Small Groups 
+                                        </div>
+                                            <p class="contentdraw " >If all you need to enjoy your Bacolod trip is each other’s company, a budget room at Go Hotels is your best bet. Go Hotels is also located in a central part of the city, making it perfect as a home base for your barkada getaway.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+
+
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                    <h2 class="accordion-header" id="sightto">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestsa" aria-expanded="false" aria-controls="collapsestsa">
+                        <p class="hrsgtext">Sights to See around Bacolod City</p>
+                    </button>
+                    </h2>
+                    <div id="collapsestsa" class="accordion-collapse collapse" aria-labelledby="sightto" data-bs-parent="#gohotels-accordion">
+                        <div class="accordion-body">
+                            <p class="prsgtext">Below are a few local sites that are within close proximity to Go Hotels Bacolod. Many of these locations can be reached by public transport or on foot. There are also taxi services that can take you anywhere in Bacolod for a reasonable fee. Please feel free to ask our staff for directions.</p>
+                            <section class="splide tosee prsgtext" aria-label="">
+                                <div class="splide__arrows">
+                                    <button class="splide__arrow splide__arrow--prev">
+                                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next">
+                                        <img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list ssbcreadmore">
+                                        <li class="splide__slide">
+                                            <div class="row slidewraper">
+                                                <div class="col">
+                                                    <img src="/museum.png" alt="museum" height="250px">
+                                                    <p class="titleslide " >Negros Museum</p>
+                                                    <div class="drawer" data-height="570">
+                                                        <p class="contentslide" >The Negros Museum's unique collection of artifacts gives you a glimpse of what life was like for the elite families of Negros during the late 19th and early 20th centuries. The<span class="more"> museum also delves extensively into the culture surrounding sugar, the island’s main cash crop and a symbol of Negros. It also has an art gallery that features rotating collections of works from Negrense artists.</span><span class="dots">...</span></p>
+                                                        <button class="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="/maokan.png" alt="maokan" height="250px">
+                                                    <p class="titleslide ">Capitol Park and Lagoon</p>
+                                                    <div class="drawer" data-height="770">
+                                                        <p class="contentslide" >The Capitol Park and Lagoon (or simply the “Lagoon” as Bacolodnons call it) is a large park located in front of the Negros Occidental Provincial Capitol. The <span class="more"> capitol building features neoclassical architecture similar to that of other American colonial-era buildings constructed in the early 20th century.<br>The park features an enormous man-made fishpond as its focal point. This public space is well-appointed with benches, assembly areas, and spots for exercise and recreation. <br>If you’re traveling with children or want a more relaxing diversion, you can buy puffed rice from surrounding vendors to feed the fish in the pond. If you’re in search of quality pasalubong the Negros Showroom is located just across Lacson Street, at the east side of the Lagoon.</span><span class="dots">...</span></p>
+                                                        <button class="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="row slidewraper">
+                                                <div class="col">
+                                                    <img src="/manokan.png" alt="maokan" height="250px">
+                                                    <p class="titleslide ">Manokan Country</p>
+                                                    <div class="drawer" data-height="660">
+                                                        <p class="contentslide" >Bacolod City is a food lover's paradise, and it may be impossible to sample every “must-try” item in a month, let alone a weekend. However, most locals would agree that Manokan <span class="more"> Country is a place you shouldn’t miss.<br>Located in Bacolod’s reclamation area, Manokan Country is a row of restaurants that serve chicken inasal, arguably the city’s signature dish. Each of the chicken inasal joints at Manokan Country has its own take on the dish, but you can’t go wrong with any of the restaurants located here. </span><span class="dots">...</span></p>
+                                                        <button class="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="/pala.png" alt="maokan" height="250px">
+                                                    <p class="titleslide ">Old Pala-Pala Market</p>
+                                                    <div class="drawer" data-height="550">
+                                                        <p class="contentslide" >If fresh seafood is more your thing, Bacolod’s Old Pala-Pala Market won’t disappoint. For decades, this public market has been a go-to for quality-conscious chefs at the city’s <span class="more"> hundreds of restaurants. But if you can’t cook, don’t worry — you can have your fresh seafood cooked just the way you like it by any of the dozens of cooks at the market. </span><span class="dots">...</span></p>
+                                                        <button class="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="row slidewraper">
+                                                <div class="col">
+                                                    <img src="/plaza.png" alt="maokan" height="250px">
+                                                    <p class="titleslide ">Bacolod City Plaza and San Sebastian Cathedral </p>
+                                                    <div class="drawer" data-height="570">
+                                                        <p class="contentslide" >The San Sebastian Cathedral is a symbol of Bacolod City and is a rare example of a 19th-century cathedral built in a Baroque style. It overlooks the Bacolod City Plaza, a popular rest <span class="more"> spot for locals. The cathedral and plaza both contain markers for various historic events that happened in Bacolod and are culturally important for most native Bacolodnons.</span><span class="dots">...</span></p>
+                                                        <button class="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <img src="/mansion.png" alt="maokan" height="250px">
+                                                    <p class="titleslide ">Heritage Houses</p>
+                                                    <div class="drawer" data-height="750">
+                                                        <p class="contentslide" >While The Ruins is rightfully one of the area’s most popular tourist attractions, there are dozens of other intact heritages houses dating back to the late 19th and early 20th <span class="more">  centuries scattered all over Bacolod as well as in nearby Talisay (the site of The Ruins) and Silay. Many of these houses are in a remarkable state of preservation, and many are still inhabited by the descendants of the families that built them. <br> Silay City has an especially remarkable collection of these well-maintained heritage houses, given the closeness of these structures. Given that Bacolod–Silay International Airport is only 30 minutes away from Go Hotels Bacolod, it’s a great idea to make these houses your last stop before departing Negros. </span><span class="dots">...</span></p>
+                                                        <button class="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <div class="slidewraper">
+                                                <img src="/garden.png" alt="maokan" height="250px">
+                                                <p class="titleslide ">Negros Forests and Ecological Foundation Biodiversity Conservation Center</p>
+                                                <div class="drawer" data-height="600">
+                                                    <p class="contentslide" >Located next to the Lagoon, the Negros Forests and Ecological Foundation Biodiversity Conservation Center is a wildlife rescue and conservation center that houses native species, including some of the world’s rarest animals. <br>The center is home to an impressive collection of endangered animals including several bird species,<span class="dots">...</span><span class="more"> giant golden-crowned flying foxes (Acerodon jubatus), and Visayan leopard cats (Prionailurus javanensis sumatranus). <br>Notably, it is home to breeding pairs of the world’s rarest deer, the Visayan spotted deer (Rusa alfredi), and the world’s rarest pig, the Negros subspecies of the Visayan warty pig (Sus cebifrons negrinus). </span> </p>
+                                                    <button class="myBtn">Read more</button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="tocare">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsehtc" aria-expanded="false" aria-controls="collapsehtc">
+                    <p class="hrsgtext">When Is the Best Time to Visit Bacolod?</p>
+                </button>
+                </h2>
+                <div id="collapsehtc" class="accordion-collapse collapse" aria-labelledby="tocare" data-bs-parent="#gohotels-accordion">
+                    <div class="accordion-body">
+                        <p class="prsgtext">Most locals would agree that October would be the best time to visit Bacolod. This is because October is the month when the world-famous MassKara festival is observed.<br>During MassKara, various events such as food festivals, cultural shows, street dancing, street parties, and free concerts are held in the weeks leading up to the culmination of the festival on the last Sunday of October. The end of the festival coincides neatly with the school semestral break and the observance of All Saints’ and All Souls’ Day, both of which are special days for pious Catholic Filipinos.<br>If you're planning to visit Bacolod for MassKara, make sure to book your room at Go Hotels a few months in advance. MassKara attracts hundreds of thousands of tourists each year, so hotels in Bacolod are usually fully booked at this time, especially the ones located in ideal spots such as Go Hotels.<br>If you're not able to make the MassKara festival this year, don't worry. Bacolod has mild weather all year round, which makes it a nice place to visit at virtually any time of the year. The rainiest months tend to be from June to October and the hottest months are from March to April. The coolest and driest time of the year tends to be January, so schedule your trip around that time if you’re planning outdoor activities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="whenis">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsewbtv" aria-expanded="false" aria-controls="collapsewbtv">
+                    <p class="hrsgtext">Happy to CARE</p>
+                </button>
+                </h2>
+                <div id="collapsewbtv" class="accordion-collapse collapse" aria-labelledby="whenis" data-bs-parent="#gohotels-accordion">
+                    <div class="accordion-body">
+                        <p class="prsgtext">Whether you’re booking a stay at our hotel in Bacolod or any of the other <a href="https://www.gohotels.ph/go-hotels/happy-to-care/list-operational-hotels">Go Hotels locations in the Philippines,</a> you can rest assured that you’ll receive service that goes above and beyond. </p>
+                        <p class="prsgtext">Robinsons Hotels and Resorts is committed to delivering CARE, which means to Create A Remarkable Experience. The idea behind CARE is to ensure that the needs of every Juan are met with a high level of service that also addresses the needs of the environment and the wider community.</p>
+                        <p class="prsgtext">To book your stay at Go Hotels, contact our Customer Service Team or book online through the Go Hotels Website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+    function readMore (element) {
+        const readMoreEl = document.querySelector(element)
+        const drawers = readMoreEl.querySelectorAll(".drawer")
+        drawers.forEach(drawerelement=> {
+            const dots = drawerelement.querySelector(".dots");
+            const moreText = drawerelement.querySelector(".more");
+            const btnText = drawerelement.querySelector(".myBtn");
+            btnText.addEventListener("click", ()=> {
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            })
+        })
+    }
+    new readMore(".ssbcreadmore")
+    new Splide(".whofor", { type : 'loop', }).mount()
+    new Splide(".tosee",{  type : 'loop', }).mount()
+    </script>
+</html>
