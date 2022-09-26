@@ -39,6 +39,9 @@
         animation-name: viewmore;
         animation-duration: 1s;
        }
+       .splide__list {
+        height: max-content;
+       }
         .hrsgtext {
             font-family: Semringah;
             font-size: 40px;
@@ -309,12 +312,9 @@
 </body>
 
 <script>
-function readMore (element, options = {}) {
-    const opt = {height: 500, duration: 300, ...options}
-    const heights = [opt.height]
+function readMore (element) {
     const readMoreEl = document.querySelector(element)
     const drawers = readMoreEl.querySelectorAll(".drawer")
-    readMoreEl.style.height = opt.height+"px"
     drawers.forEach(drawerelement=> {
         const dots = drawerelement.querySelector(".dots");
         const moreText = drawerelement.querySelector(".more");
@@ -324,23 +324,19 @@ function readMore (element, options = {}) {
                 dots.style.display = "inline";
                 btnText.innerHTML = "Read more";
                 moreText.style.display = "none";
-                heights.splice(heights.indexOf(Number(drawerelement.dataset.height)), 1)
             } else {
                 dots.style.display = "none";
                 btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
-                heights.push(Number(drawerelement.dataset.height))
             }
-            readMoreEl.style.height = Math.max(...heights)+"px"
-            readMoreEl.style.transition = `height ${opt.duration}ms ease-in-out`
         })
     })
 }
 
-new readMore(".wbtvreadmore", {height: 330})
-new readMore(".wcghreadmore", {height: 650})
-new readMore(".wghfreadmore", {height: 370})
-new readMore(".ssbcreadmore", {height: 480})
+new readMore(".wbtvreadmore")
+new readMore(".wcghreadmore")
+new readMore(".wghfreadmore")
+new readMore(".ssbcreadmore")
 new Splide(".whofor", { type     : 'loop', }).mount()
 new Splide(".tosee",{  type     : 'loop', }).mount()
 </script>
