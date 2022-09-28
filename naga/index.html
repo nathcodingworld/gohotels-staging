@@ -1,0 +1,428 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacolod</title>
+
+        <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ghh-wrapper{
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+      
+       .more {
+        display: none;
+        animation-name: viewmore;
+        animation-duration: 1s;
+       }
+       .splide__list {
+        height: max-content;
+       }
+        .hrsgtext {
+            font-family: Semringah;
+            font-size: 40px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00a84f;
+            margin: 0;
+        }
+        .prsgtext {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: .93px;
+            color: #343434;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contentslide {
+            margin-bottom: 0;
+        }
+        /* readmore */
+        .myBtn {
+            background-color: transparent;
+            border: none;
+            color: #04c860 ;
+            margin: 0;
+            font-size: 20px;
+        }
+        .myBtn:hover {
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+        .titledraw {
+            border: none;
+            background-color: transparent ;
+            font-family: Semringah;
+            color: #f37021;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: all 500ms ease-in-out;
+        }
+        .titledraw img {
+            margin-bottom: 15px;
+            height: 100px;
+        }
+        .titledraw i {
+            padding-bottom: 5px;
+            font-family: 700;
+        }
+        .contentdraw {
+            animation-name: viewmore;
+            animation-duration: 1s;
+        }
+        .drawer {
+            overflow: hidden;
+            position: relative;
+            transition: all 500ms ease-in-out;
+        }
+        .slidewraper {
+            padding: 0 100px;
+        }
+        .titleslide {
+            font-family: Semringah;
+            color: #f37021;
+            margin-top: 10px;
+        }
+        .splide__arrow img {
+            height: 80px;
+        }
+        .tosee .splide__slide img {
+            height: 250px;
+        }
+        .panel-title a {
+            color: #00a84f;
+        }
+        .panel-heading {
+            border: 1px solid #00a84f !important;
+            padding: 0;
+        }
+        .panel-title {
+            background-color: white;
+            padding: 12px;
+        }
+        @media only screen and (max-width: 700px) {
+            .slidewraper {
+                padding: 0;
+            } 
+            .splide__arrow img {
+                height: 40px;
+            }
+            .hrsgtext {
+                font-size: 32px;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+             .tosee .splide__slide img {
+                height: 150px;
+            }
+            .hrsgtext {
+                font-size: 24px;
+            }
+        }
+        /*  Animation */
+        @keyframes viewmore {
+            from {opacity: 0 ;}
+            to {opacity: 1 ;}
+        }
+    </style>
+
+    <body>
+
+<div class="panel-group ghh-wrapper" id="gh-accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whychoose">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewcgh" aria-expanded="false" aria-controls="collapsewcgh"> <p class="hrsgtext">Why Choose Go Hotels Plus in Naga City?</p> </a> </h4>
+</div>
+<div id="collapsewcgh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whychoose">
+<div class="panel-body">
+<p class="prsgtext">As both a tourist hotspot and the gateway for commercial and industrial activities in Bicol, Naga City welcomes many visitors from across the country. There are a lot of accommodations options available to those who will stay in Naga City for more than a day, from luxury hotels to apartelles and capsule hostels. <br/>But what makes Go Hotels Plus the ideal choice among other hotels in Naga City? Here are four reasons it’s the number one option for solo adventurers, couples, business travelers, and those who simply want to go explore more in the Bicol Region: </p>
+<div class="row prsgtext ">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/check-in.png" height="100px">
+<br> <i class="bi bi-plus"></i>You’ll Enjoy Speed and Convenience While Booking</i>
+</div>
+<p class="contentdraw" >One of the best things about the Go Hotels brand is how easy it is for guests to book affordable hotel rooms. The same applies with Go Hotels Plus Naga City. All you’ll need to do is check the rates and availability for your desired dates here on our website, then pay for your room through methods like bank deposit or credit card. In just a few simple steps, your stay in one of the most trustworthy hotels in Naga City will be confirmed. </p>
+</div>
+<div class="col-lg-5 col-sm-12">
+<div class="titledraw">
+<img src="/saving.png" height="100px">
+<br> <i class="bi bi-plus"></i>You’ll Get the Biggest Bang for Your Buck</i>
+</div>
+<p class="contentdraw" >The Go Hotels chain is all about giving guests the best value for their money. At Go Hotels Plus in Naga City, you’ll be able to see how far your peso stretches. You’ll be able to enjoy a full range of amenities—like a king-sized bed, cotton sheets, chiropractic and hypoallergenic pillows, hot and cold showers, and free Wi-Fi—for a price that can’t be beat. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/fireplace.png" height="100px">
+<br> <i class="bi bi-plus"></i>You’ll Be Treated to Exemplary Hotel Service</i>
+</div>
+<p class="contentdraw " >Go Hotels Plus Naga City is a proud member of the Robinsons Hotels and Resorts family of brands. When checked into Go Hotels Plus Naga City, you can expect the same care and attention to detail from our staff that you would encounter in any other Robinsons establishment. Check into Go Hotels Plus Naga City and enjoy the pampering that you deserve after a long day of travel. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/location.png" height="100px">
+<br> <i class="bi bi-plus"></i> You’ll Take Advantage of the Most Convenient Location in Naga City</i>
+</div>
+<p class="contentdraw " >Another perk of staying in Go Hotels Plus Naga City is its proximity to the commercial establishments, parks, churches, transport hubs, and other major landmarks in the area. It will be neither difficult nor expensive to get around, which is sure to enhance your overall travel experience. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whois">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewghf" aria-expanded="false" aria-controls="collapsewghf"> <p class="hrsgtext">The Best Occasions to Check into Go Hotels Plus Naga City</p> </a> </h4>
+</div>
+<div id="collapsewghf" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whois">
+<div class="panel-body">
+<p class="prsgtext">Several factors play into your ideal hospitality experience, ranging from the number of people in your party to the degree of luxury you want to indulge in. Go Hotels Plus Naga City is the ideal pick among hotels in Naga City for travelers embarking on the following: </p>
+<section class="splide whofor prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/holidays.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Visit to Relatives in the Bicol Region
+</div>
+<p class="contentdraw" >Got family in the Bicol region? Schedule your next reunion at Naga City and reserve several rooms at Go Hotels Plus Naga City with ease. The hotel will be the perfect meetup point before moving out for activities that you can enjoy as a family, like a food crawl or pilgrimage to one of Naga’s scenic churches.  </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/solo.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Solo Vacation to Explore Naga City
+</div>
+<p class="contentdraw " >If you’re on a solo sabbatical and want to discover the city by yourself, choose inexpensive and laid-back type of accommodations like a room at Go Hotels Plus. This is a great option if you want to travel light but still want the creature comforts of a hotel.  </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/couple.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Romantic Getaway with Your Special Someone
+</div>
+<p class="contentdraw " >Looking for a unique way to spend quality time with your partner? Staying at Go Hotels Plus will allow you to soak in the city’s charm while still having enough money for food, shopping, and touring. Take advantage of Go Hotels Plus’s cozy and economical accommodation and let the focus be on just the two of you. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/group.png" alt="groups" height="100px"> 
+<br> <i class="bi bi-plus"></i> An Action-Packed Trip with Friends
+</div>
+<p class="contentdraw " >Friend groups will also enjoy a leisurely but comfortable hotel atmosphere at Go Hotels Plus Naga City. Converge here with your barkada before you set off on a hike or island hopping adventure. </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-sm-12">
+<div class="titledraw" >
+<img src="/busy.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Business Trip or MICE Event in Naga City 
+</div>
+<p class="contentdraw" >Go Hotels Plus Naga City is also a good choice of business hotel. You won’t need to spend as much compared to how much you would spend at a luxury hotel, but you’re still guaranteed a quiet and peaceful place that’s conducive to work <br/> You should also consider Go Hotels Plus Naga City if you’ve got a seminar, conference, forum, or other industry event in Naga. If you’re hosting one yourself, ask our customer care team about booking multiple rooms for guests and reserving amenities like the hotel’s function rooms. </p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="sightto">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsestsa" aria-expanded="false" aria-controls="collapsestsa"> <p class="hrsgtext">Landmarks and Tourist Attractions Near Go Hotels Plus Naga City</p> </a> </h4>
+</div>
+<div id="collapsestsa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sightto">
+<div class="panel-body">
+<p class="prsgtext">Make Go Hotels Plus Naga City your home base before you go explore more of what the city has to offer. Here are some attractions that are worth hitting up when you’re in Naga:  </p>
+<section class="splide tosee prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" >
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" >
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list ssbcreadmore">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/museum.png" alt="museum">
+<p class="titleslide " >The Basilica of Our Lady of Peñafrancia</p>
+<div class="drawer" data-height="570">
+<p class="contentslide" >The Minor Basilica of Our Lady of Peñafrancia, the Patroness and Queen of Bicol, holds the distinction of being one of the largest Marian pilgrimage sites in all of Asia.<span class="more"> Visit the home of the miraculous image of the Virgin Mary and, if you’re so inclined, say a prayer for your special intentions. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/maokan.png" alt="maokan">
+<p class="titleslide ">St. John the Evangelist Metropolitan Cathedral</p>
+<div class="drawer" data-height="770">
+<p class="contentslide" >Another religious site that you should visit when in Naga City is St. John the Evangelist Metropolitan Cathedral, or the Naga Metropolitan Cathedral. Admire the fine <span class="more"> details in the church’s Romanesque architecture and glass windows, and snap a photo at the magnificent Portia Mariae arch that’s just a stone’s throw away. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">Caramoan Islands</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >The Caramoan Islands are known collectively as the Emerging Paradise of the Pacific due to their breathtaking white and pink sandy beaches, as well as their wealth <span class="more"> of limestone cliffs and caves. Go on an island hopping adventure with loved ones just a few hours away from Naga City, and discover the unspoiled shores that were also the backdrop of the reality TV show Survivor.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">Mt. Isarog National Park</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >To see more of Bicol’s natural wonders, head over to Mt. Isarog National Park, which is home to one of Bicol Region’s active volcanoes. Here you’ll encounter beautiful <span class="more"> sights like Malabsay Falls at the foot of Mt. Isarog and Magragobrog Waterfalls inside the mountain’s crater. <span class="more"></span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">Naga City Ecology Park</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >Yet another green space you should explore is the Naga City Ecology Park, where you can picnic and stroll around with friends or family. The highlight of the park <span class="more"> is its giant maze. If you’re up to the challenge, get lost in this labyrinth and see who among you in your group can find their way out first! </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">Pinacuason Hot Spring Resort and Adventure Park</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >Lastly, for both leisure and deep relaxation, consider making a stop at Pinacuason Hot Spring Resort and Adventure Park. Try out the park’s zip line or its bike zip line,<span class="more"> which will allow you to pedal a modified bike along a cable that’s a hundred feet high. When you’re done, immerse yourself in the healing waters of one of the hot spring pools.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+</ul> 
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whenis">
+<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewbtv" aria-expanded="false" aria-controls="collapsewbtv"> <p class="hrsgtext">Go Hotels Plus Naga City</p> </a> </h4>
+</div>
+<div id="collapsewbtv" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whenis">
+<div class="panel-body">
+<p class="prsgtext">Have you ever visited a city where it’s impossible not to have fun? For many visitors to the southern part of Luzon, that city is Naga City. The capital city of the province of Camarines Sur is famous for the Peñafrancia Festival, which draws thousands of devoted Catholics from different parts of the country to its doors every September. Hikers and outdoor enthusiasts love to make stops at Mt. Isarog National Park, where they can go bird watching and see several waterfalls, as well as Panicuason Hot Spring Resort, where it’s possible to either relax in one of the spring water pools or either go zip lining or even bike zip lining. <br/>On top of being a tourist hub, Naga City has also cultivated a reputation for being one of the Bicol Region’s commercial centers. It is where businessmen often go to ink contracts and settle other business matters, and where local and international organizations host Meetings, Incentives, Conferences, and Exhibitions (MICE) for their respective industries. <br/>At the heart of all of this activity, you’ll find Go Hotels Plus Naga City. Located next door to Robinsons Place Naga and its sister hotel, Summit Hotel Naga, Go Hotels Plus Naga City offers travelers an upgraded basic hotel experience for a budget price. Boasting added comforts and amenities at the same affordable price point as other Go Hotels properties, ours is one of the best hotels in Naga City. Book a room at Go Hotels Plus Naga City and make the best out of your visit to the Queen City of Bicol! </p>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="tocare">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsehtc" aria-expanded="false" aria-controls="collapsehtc"><p class="hrsgtext">Go Hotels Plus Naga City is Happy to CARE</p></a> </h4>
+</div>
+<div id="collapsehtc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tocare">
+<div class="panel-body">
+<p class="prsgtext">As part of the Robinsons Hotel and Resorts group, Go Hotels Plus Naga City is committed to CARE, or Create A Remarkable Experience, for every Juan checked in. Our standard of service is anchored on clean, green, and ethical business practices, and we are always looking out for the safety and well-being of our guests and staff members. </p>
+<p class="prsgtext">One example of this is our adherence to the Circle of Clean, an elevated standard of hygiene and sanitation that incorporates “New Normal” health and safety practices. In accordance with guidelines set by the World Health Organization (WHO) and the Philippines’ own Department of Health (DOH), we’ve updated our hotel operations to include regular cleaning and sanitation, use of physical distancing barriers and alcohol and hand sanitizer dispensers, and prearranged meal sets. <br>Any guest checked in at Go Hotels Plus Naga City can be assured that their health is a top priority. Trust us to deliver a hospitality experience that’s up to date in the New Normal. </p>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="reserve">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapseryr" aria-expanded="false" aria-controls="collapseryr"><p class="hrsgtext">Reserve Your Room at Go Hotels Plus Naga City</p></a> </h4>
+</div>
+<div id="collapseryr" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reserve">
+<div class="panel-body">
+<p class="prsgtext">You can book for a solo trip, a romantic getaway, a family reunion, or a business outing here on Go Hotels Plus Naga City’s official website. Browse our Special Offers to see if you’re eligible for additional discounts or promos, such as those that involve our partner establishments.  </p>
+<p class="prsgtext">Rest, relax, and go explore more when you’re in Bicol’s Queen City. Book a room at Go Hotels Plus Naga City now!</p>
+</div>
+</div>
+</div>
+
+</div>
+        
+    </body>
+
+    <script>
+    function readMore (element) {
+        const readMoreEl = document.querySelector(element)
+        const drawers = readMoreEl.querySelectorAll(".drawer")
+        drawers.forEach(drawerelement=> {
+            const dots = drawerelement.querySelector(".dots");
+            const moreText = drawerelement.querySelector(".more");
+            const btnText = drawerelement.querySelector(".myBtn");
+            btnText.addEventListener("click", ()=> {
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            })
+        })
+    }
+    readMore(".ssbcreadmore")
+    new Splide(".whofor", { type : 'loop', }).mount()
+    new Splide(".tosee",{  type : 'loop', }).mount()
+    </script>
+</html>
