@@ -1,0 +1,395 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacolod</title>
+
+        <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ghh-wrapper{
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+      
+       .more {
+        display: none;
+        animation-name: viewmore;
+        animation-duration: 1s;
+       }
+       .splide__list {
+        height: max-content;
+       }
+        .hrsgtext {
+            font-family: Semringah;
+            font-size: 40px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00a84f;
+            margin: 0;
+        }
+        .prsgtext {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: .93px;
+            color: #343434;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contentslide {
+            margin-bottom: 0;
+        }
+        /* readmore */
+        .myBtn {
+            background-color: transparent;
+            border: none;
+            color: #04c860 ;
+            margin: 0;
+            font-size: 20px;
+        }
+        .myBtn:hover {
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+        .titledraw {
+            border: none;
+            background-color: transparent ;
+            font-family: Semringah;
+            color: #f37021;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: all 500ms ease-in-out;
+        }
+        .titledraw img {
+            margin-bottom: 15px;
+            height: 100px;
+        }
+        .titledraw i {
+            padding-bottom: 5px;
+            font-family: 700;
+        }
+        .contentdraw {
+            animation-name: viewmore;
+            animation-duration: 1s;
+        }
+        .drawer {
+            overflow: hidden;
+            position: relative;
+            transition: all 500ms ease-in-out;
+        }
+        .slidewraper {
+            padding: 0 100px;
+        }
+        .titleslide {
+            font-family: Semringah;
+            color: #f37021;
+            margin-top: 10px;
+        }
+        .splide__arrow img {
+            height: 80px;
+        }
+        .tosee .splide__slide img {
+            height: 250px;
+        }
+        .panel-title a {
+            color: #00a84f;
+        }
+        .panel-heading {
+            border: 1px solid #00a84f !important;
+            padding: 0;
+        }
+        .panel-title {
+            background-color: white;
+            padding: 12px;
+        }
+        @media only screen and (max-width: 700px) {
+            .slidewraper {
+                padding: 0;
+            } 
+            .splide__arrow img {
+                height: 40px;
+            }
+            .hrsgtext {
+                font-size: 32px;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+             .tosee .splide__slide img {
+                height: 150px;
+            }
+            .hrsgtext {
+                font-size: 24px;
+            }
+        }
+        /*  Animation */
+        @keyframes viewmore {
+            from {opacity: 0 ;}
+            to {opacity: 1 ;}
+        }
+    </style>
+
+    <body>
+
+<div class="panel-group ghh-wrapper" id="gh-accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whychoose">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewcgh" aria-expanded="false" aria-controls="collapsewcgh"> <p class="hrsgtext">Why Choose Go Hotels for Your Next Tuguegarao Trip?</p> </a> </h4>
+</div>
+<div id="collapsewcgh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whychoose">
+<div class="panel-body">
+<p class="prsgtext">Whether you’re traveling for business or pleasure, accommodations are likely to take the biggest bite out of your budget. If you’re looking to save big on your next trip to Tuguegarao City without sacrificing quality of service, Go Hotels Plus Tuguegarao is the perfect hotel for you.<br/>Here are four compelling reasons to book a stay at Go Hotels Plus Tuguegarao:</p>
+<div class="row prsgtext ">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/check-in.png" height="100px">
+<br> <i class="bi bi-plus"></i>High-Quality Service</i>
+</div>
+<p class="contentdraw" >You can expect the same high standard of service from Go Hotels Plus Tuguegarao that you’d receive at any other Go Hotels branch in the country. Our friendly and attentive staff are constantly available to attend to your needs or answer any questions you might have about the hotel, the city, and the surrounding area. Daily make-up room services are also available free of charge if you choose to stay with us for more than one night.</p>
+</div>
+<div class="col-lg-5 col-sm-12">
+<div class="titledraw">
+<img src="/saving.png" height="100px">
+<br> <i class="bi bi-plus"></i> Unbeatable Value for Money</i>
+</div>
+<p class="contentdraw" >As the nation’s primary choice for budget accommodations, Go Hotels prides itself on its ability to offer an elevated hospitality experience at accessible rates. If what you’re after is a no-frills but eminently comfortable hotel room equipped with all the necessary amenities, Go Hotels Plus Tuguegarao is more than equipped to provide it to you at an affordable price. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/fireplace.png" height="100px">
+<br> <i class="bi bi-plus"></i> Comprehensive Amenities</i>
+</div>
+<p class="contentdraw " >Go Hotels makes it a point not to scrimp on the amenities and conveniences we provide to our guests, and Go Hotels Plus Tuguegarao is no exception. 24-hour CCTV security is in force throughout the entire property, and free Wi-Fi is also available to ensure that you stay connected at all times. <br/>To ensure guests’ maximum comfort, our rooms are outfitted with high-quality non-allergenic chiropractic pillows and sheets made of 100% cotton. In-room amenities include air conditioning, a hot and cold rain shower, an in-room safe, a 32-inch LCD cable TV, and many more. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/location.png" height="100px">
+<br> <i class="bi bi-plus"></i> Prime Location</i>
+</div>
+<p class="contentdraw " >To help our guests make the most of their time at their chosen destinations, most Go Hotels branches are located conveniently close to local tourist spots or major transport routes. Go Hotels Plus Tuguegarao, for instance, is located in Tuguegarao’s city center, a stone’s throw away from Robinsons Place Tuguegarao. This strategic location not only gives guests immediate access to the abundance of shopping and dining options available at the mall, but also serves as an optimal jump-off point for exploring the rest of the city and the surrounding area.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whois">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewghf" aria-expanded="false" aria-controls="collapsewghf"> <p class="hrsgtext">Who Should Book at Go Hotels?</p> </a> </h4>
+</div>
+<div id="collapsewghf" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whois">
+<div class="panel-body">
+<p class="prsgtext">The winning combination of reasonable rates, complete amenities, and superior service makes Go Hotels Plus Tuguegarao the perfect hotel for the budget-conscious traveler. You’ll definitely want to choose Go Hotels for your next visit to Tuguegarao City if you fall under one of the following guest categories:</p>
+<section class="splide whofor prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/busy.png" height="100px">
+<br> <i class="bi bi-plus"></i> Business Travelers 
+</div>
+<p class="contentdraw" >Individuals traveling to Tuguegarao City on business can look forward to a good night’s sleep on every day of their stay at Go Hotels Plus Tuguegarao. We provide all the necessary comforts to help you unwind after a long day of meetings, conference sessions, site visits, or other business activities. Our high-speed Wi-Fi will also make it easy for you to catch up on work or entertain yourself during your downtime.</p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/solo.png" height="100px">
+<br> <i class="bi bi-plus"></i> Solo Travelers 
+</div>
+<p class="contentdraw " >If it’s some peace and quiet you’re looking for on your travels, Go Hotels Plus Tuguegarao has you covered. Our comfortable rooms are just the right size to host a party for one, so you can kick back, relax, and simply enjoy your own company. </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/couple.png" height="100px">
+<br> <i class="bi bi-plus"></i> Couples
+</div>
+<p class="contentdraw " >All rooms at Go Hotels Plus Tuguegarao are designed to comfortably accommodate a maximum of two people. This makes Go Hotels an ideal lodging choice if you’re planning a getaway to Tuguegarao with your spouse or partner. Not only will you be able to spend more of your travel budget on seeing the sights, sitting down to delicious meals, and making precious memories together, but you’ll also be assured of a cozy place to rest together between each adventure.</p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/group.png" alt="groups" height="100px"> 
+<br> <i class="bi bi-plus"></i> Small Groups 
+</div>
+<p class="contentdraw " >Go Hotels Plus Tuguegarao’s convenient location in the heart of the city makes it a perfect headquarters for any barkada excursion. Your group will surely be able to reach major local attractions with ease, and you’ll also have more of your budget to spend on new experiences and must-do activities.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="sightto">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsestsa" aria-expanded="false" aria-controls="collapsestsa"> <p class="hrsgtext">What to Do in Tuguegarao City</p> </a> </h4>
+</div>
+<div id="collapsestsa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sightto">
+<div class="panel-body">
+<p class="prsgtext">Many points of interest are easily reachable from Go Hotels Tuguegarao, whether you opt to take a car or public transport. In case you need help figuring out how to maximize your time in Tuguegarao City, don’t hesitate to ask our staff for directions or recommendations.<br/>The following are just a few major activities you won’t want to miss during your visit to Tuguegarao: </p>
+<section class="splide tosee prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" >
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" >
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list ssbcreadmore">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/museum.png" alt="museum">
+<p class="titleslide " >See the Minor Basilica of Our Lady of Piat</p>
+<div class="drawer" data-height="570">
+<p class="contentslide" >Devoted Catholics, history buffs, and lovers of art and architecture will all definitely want to visit the Minor Basilica of Our Lady of Piat, the largest Catholic <span class="more"> church in Cagayan province. The church is located in the town of Piat, an approximate 30-minute drive northwest from Tuguegarao City. It houses a distinctive black image of the Virgin Mary and the infant Jesus which Dominican friars first brought to the Philippines from Macau in 1604. This image now draws pilgrims and devotees to Cagayan Valley from all over the country.<br/>The basilica boasts an imposing domed ceiling, an interior lined with dazzling stained-glass windows, and multiple alcoves in which visitors can gaze upon restored images of saints. While you don’t need to be a believer by any means to appreciate its majesty, don’t be surprised if you come away from your visit feeling like you’ve been in the presence of something divine.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/maokan.png" alt="maokan">
+<p class="titleslide ">Visit the Cagayan Museum and Historical Research Center</p>
+<div class="drawer" data-height="770">
+<p class="contentslide" >If you’d like to learn more about the history and culture of Cagayan Valley, stop in at the Cagayan Museum and Historical Research Center. <span class="more"> This fascinating facility houses multiple exhibits that comprises fossils, pieces of art, antiques, cultural artifacts, and other ethnographic items. Simply perusing these exhibits will no doubt uncover a wealth of stories to you about Cagayan and its people.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">Explore Callao and Sierra Caves</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >Callao Cave is probably Cagayan Valley’s most iconic tourist attraction. Once you explore its seven chambers, you’ll find yourself dazzled by how these typically <span class="more"> darkened spaces can be brilliantly illuminated by the light coming in through holes in the cave roof. The highlight of the experience is a beautiful subterranean chapel, where you can say a prayer or simply sit in silence for a while, admiring the majesty that surrounds you.<br/>It's entirely possible to make your way through Callao Cave on foot, and the abundant light in the vicinity makes exploring it an easy journey as long as you’re careful. More seasoned spelunkers in search of a bigger challenge will want to head to the nearby Sierra Caves, which are less likely to be crowded with tourists. Be prepared for an adventure that may leave you muddy from head to toe as you crawl through the caves’ many narrow openings.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">Cross the Buntun Bridge</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >San Francisco’s Golden Gate Bridge has a worthy rival in Tuguegarao City’s Buntun Bridge, one of the longest bridges in the Philippines. This 1.37-kilometer bridge <span class="more"> stretches across the Cagayan River and makes for a wonderfully scenic drive on a clear day. The view may even inspire you to put on your walking shoes and traverse it on foot for a daily exercise experience unlike any other. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="slidewraper">
+<img src="/garden.png" alt="maokan">
+<p class="titleslide ">Sample Local Delicacies</p>
+<div class="drawer" data-height="600">
+<p class="contentslide" >When in Tuguegarao, you’ll want to eat like a local. Food items made from carabao products are popular in the city, such as carabao milk pastillas and chicharabao, a chicharron-like snack made of carabao skin. Don’t miss the fabled Pancit Batil Patong, one of Tuguegarao’s signature dishes. This noodle-based dish incorporates carabao beef, bean sprouts, pork liver, egg, and crumbled chicharron and is topped with a special sauce. <span class="more"> It won’t be difficult to get hold of a good hearty serving of Pancit Batil Patong, either, as many local eateries will offer it as a house specialty.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</li>
+</ul> 
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whenis">
+<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewbtv" aria-expanded="false" aria-controls="collapsewbtv"> <p class="hrsgtext">Go Hotels Plus Tuguegarao</p> </a> </h4>
+</div>
+<div id="collapsewbtv" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whenis">
+<div class="panel-body">
+<p class="prsgtext">The city of Tuguegarao is located on a sprawling plain surrounding the Cagayan River and serves as the provincial capital of Cagayan Valley. Founded in 1604 as a “mission-pueblo” by priests of the Dominican religious order, the city has grown over the years into one of northern Luzon’s foremost urban centers. As the only urbanized city in Cagayan province, Tuguegarao functions as the primary transportation hub for the rest of the surrounding region.<br/>Tuguegarao’s atmosphere is a charming blend of urban and provincial, similarly to many other smaller cities located outside of urban centers. The ever-reliable tricycle and the horse-drawn karitela remain the most common types of public transport that both locals and visitors use to get around. On the other hand, there’s also no shortage of hospitals, hotels, banks, restaurants, and other businesses here that you’d find in any contemporary city.<br/>For travelers looking for affordable hotels in Tuguegarao City, Go Hotels Plus Tuguegarao is a prime choice. The hotel is the 16th property in Robinsons Hotels and Resorts’ fast-growing Go Hotels chain and the first Go Hotels property to be established in Northern Luzon. It’s also the first Go Hotels Plus branch to open in the country and promises guests a superior level of comfort, security, and service at a fraction of the price that you’d get at other higher-end establishments.</p>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="tocare">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsehtc" aria-expanded="false" aria-controls="collapsehtc"><p class="hrsgtext">Get Top-Quality CARE at Go Hotels</p></a> </h4>
+</div>
+<div id="collapsehtc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tocare">
+<div class="panel-body">
+<p class="prsgtext">At Robinsons Hotels and Resorts, we promise to CARE—that is, to Create a Remarkable Experience. This commitment means we devote ourselves wholeheartedly to the needs of every Juan, the environment, and the wider community. Thus, our guests can expect a level of service that gives them much more than their money’s worth at any hotel or resort under our brand.</p>
+<p class="prsgtext">You can expect to be served with CARE if you book stays at Go Hotels Plus Tuguegarao or any other Go Hotels branches in the Philippines. Make a reservation today buy contacting our customer service team or sending in your booking request through the Go Hotels website.</p>
+</div>
+</div>
+</div>
+
+</div>
+        
+    </body>
+
+    <script>
+    function readMore (element) {
+        const readMoreEl = document.querySelector(element)
+        const drawers = readMoreEl.querySelectorAll(".drawer")
+        drawers.forEach(drawerelement=> {
+            const dots = drawerelement.querySelector(".dots");
+            const moreText = drawerelement.querySelector(".more");
+            const btnText = drawerelement.querySelector(".myBtn");
+            btnText.addEventListener("click", ()=> {
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            })
+        })
+    }
+    readMore(".ssbcreadmore")
+    new Splide(".whofor", { type : 'loop', }).mount()
+    new Splide(".tosee",{  type : 'loop', }).mount()
+    </script>
+</html>
