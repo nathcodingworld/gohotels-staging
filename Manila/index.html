@@ -1,0 +1,449 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacolod</title>
+
+        <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ghh-wrapper{
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+      
+       .more {
+        display: none;
+        animation-name: viewmore;
+        animation-duration: 1s;
+       }
+       .splide__list {
+        height: max-content;
+       }
+        .hrsgtext {
+            font-family: Semringah;
+            font-size: 40px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00a84f;
+            margin: 0;
+        }
+        .prsgtext {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: .93px;
+            color: #343434;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contentslide {
+            margin-bottom: 0;
+        }
+        /* readmore */
+        .myBtn {
+            background-color: transparent;
+            border: none;
+            color: #04c860 ;
+            margin: 0;
+            font-size: 20px;
+        }
+        .myBtn:hover {
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+        .titledraw {
+            border: none;
+            background-color: transparent ;
+            font-family: Semringah;
+            color: #f37021;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: all 500ms ease-in-out;
+        }
+        .titledraw img {
+            margin-bottom: 15px;
+            height: 100px;
+        }
+        .titledraw i {
+            padding-bottom: 5px;
+            font-family: 700;
+        }
+        .contentdraw {
+            animation-name: viewmore;
+            animation-duration: 1s;
+        }
+        .drawer {
+            overflow: hidden;
+            position: relative;
+            transition: all 500ms ease-in-out;
+        }
+        .slidewraper {
+            padding: 0 100px;
+        }
+        .titleslide {
+            font-family: Semringah;
+            color: #f37021;
+            margin-top: 10px;
+        }
+        .splide__arrow img {
+            height: 80px;
+        }
+        .tosee .splide__slide img {
+            height: 250px;
+        }
+        .panel-title a {
+            color: #00a84f;
+        }
+        .panel-heading {
+            border: 1px solid #00a84f !important;
+            padding: 0;
+        }
+        .panel-title {
+            background-color: white;
+            padding: 12px;
+        }
+        @media only screen and (max-width: 700px) {
+            .slidewraper {
+                padding: 0;
+            } 
+            .splide__arrow img {
+                height: 40px;
+            }
+            .hrsgtext {
+                font-size: 32px;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+             .tosee .splide__slide img {
+                height: 150px;
+            }
+            .hrsgtext {
+                font-size: 24px;
+            }
+        }
+        /*  Animation */
+        @keyframes viewmore {
+            from {opacity: 0 ;}
+            to {opacity: 1 ;}
+        }
+    </style>
+
+    <body>
+
+<div class="panel-group ghh-wrapper" id="gh-accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whychoose">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewcgh" aria-expanded="false" aria-controls="collapsewcgh"> <p class="hrsgtext">Why Choose Go Hotels in Otis, Manila?</p> </a> </h4>
+</div>
+<div id="collapsewcgh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whychoose">
+<div class="panel-body">
+<p class="prsgtext">The City of Manila is the second most populated city in NCR, and it’s a key location for many of Metro Manila’s business, leisure, and tourism activities. Visitors who want to stay in Manila overnight or longer have a wealth of accommodations to choose from, including midrange or luxury hotels and rented apartments. <br/>But what makes Go Hotels Otis Manila the ideal choice for your accommodations? Here’s why you should book with us for your next city adventure, business trip, or romantic getaway in the city of Manila.  </p>
+<section class="splide whygo prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/check-in.png" height="100px">
+<br> <i class="bi bi-plus"></i>A Seamless Booking Experience</i>
+</div>
+<p class="contentdraw" >You’ll be able to experience Go Hotels’ signature speed, convenience, and quality of service as soon as you book a room. Simply use our website to reserve a room on your preferred date and pay via credit card, bank deposit, or e-wallet transfer. It will be that easy to finalize your accommodations for a comfy stay in Go Hotels Otis Manila. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/saving.png" height="100px">
+<br> <i class="bi bi-plus"></i>Maximum Comfort for the Best Price</i>
+</div>
+<p class="contentdraw" >Despite its reputation as a budget hotel, Go Hotels Otis Manila doesn’t scrimp on all the necessary comforts for a pleasant stay. You’re guaranteed basic amenities like toiletries and air conditioning, as well as perks like high-quality non-allergenic pillows, an in-room safe, a hair dryer, and a strong Wi-Fi connection. For the price you pay, you’ll have more than enough to ensure full respite or a conducive atmosphere to do business. </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/fireplace.png" height="100px">
+<br> <i class="bi bi-plus"></i>A Standard of Service That You Can Rely On</i>
+</div>
+<p class="contentdraw " >One of the advantages of staying in a hotel over staying in an alternative type of accommodation, like an apartment rental, is your access to standardized hotel services like housekeeping. You can be assured of a clean room, 24/7 hotel security, and round-the-clock assistance from Go Hotels Otis Manila’s friendly and well-trained staff. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/city.png" height="100px">
+<br> <i class="bi bi-plus"></i>A New Way to Experience the City of Manila</i>
+</div>
+<p class="contentdraw " >Staying at Go Hotels Otis Manila will allow you to look at the City of Manila through new eyes, even if you have a modest budget. Check in today and enjoy the opportunity to go explore more of the city, immersing yourself in the heart of Manila through its commerce, culture, and cuisine. </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-sm-12">
+<div class="titledraw">
+<img src="/location.png" height="100px">
+<br> <i class="bi bi-plus"></i>Excellent Location</i>
+</div>
+<p class="contentdraw " >Go Hotels Otis Manila is a stone’s throw away from Robinsons Otis shopping mall, which houses establishments like drugstores, retail outlets, and restaurants. It is also within close proximity to eateries, government agencies, churches like Our Lady of Peñafrancia Parish and Santa Maria Goretti Parish, and tourist attractions like Paco Park, Rizal Park, and the Manila Baywalk. Enjoy quick access to essential goods and services in the Paco area, as well as a taste of Manila City’s old-world charm and nightlife</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whois">
+<h4 class="panel-title hrsgtext"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewghf" aria-expanded="false" aria-controls="collapsewghf">The Perfect Occasions to Stay in Go Hotels Otis Manila </a> </h4>
+</div>
+<div id="collapsewghf" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whois">
+<div class="panel-body">
+<p class="prsgtext">The ideal hospitality experience depends on factors like your budget, the number of people you’re traveling with, and the nature of your stay. Below are the four best occasions to check into a well-respected budget hotel like Go Hotels Otis Manila: </p>
+<section class="splide whofor prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/busy.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Business Trip to See Manila-Based Clients or Business Partners 
+</div>
+<p class="contentdraw" >We also welcome business travelers who want affordable but work-conducive accommodations for their upcoming business trips. If you’re in Manila to ink a business deal, visit your company headquarters in the city, or attend an industry event, consider checking into Go Hotels Otis Manila and making it your home base for the duration of your visit.  </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/solo.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Solo Adventure
+</div>
+<p class="contentdraw " >For a solo walking tour of Manila or other similar adventure, it will make sense for you to choose accommodations that are light on your wallet. If you don’t anticipate spending too much time at the hotel and need just enough for a good night’s rest, then a budget room at Go Hotels Otis Manila is ideal.  </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/couple.png" height="100px">
+<br> <i class="bi bi-plus"></i> A Romantic Weekend Getaway
+</div>
+<p class="contentdraw " >Go Hotels Otis Manila is also a great choice for a relaxed couple who want to spend some time away from the world. Treat your partner to a simple but restful vacation at our hotel in Paco.  </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/group.png" alt="groups" height="100px"> 
+<br> <i class="bi bi-plus"></i> A Laid-Back Staycation with Your Friends
+</div>
+<p class="contentdraw " >You should also consider Go Hotels Otis Manila for a staycation with your barkada. Go on a sightseeing tour, a food crawl, or a night out in one of Manila City’s bars and unwind together back at your hotel room.  </p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="sightto">
+<h4 class="panel-title hrsgtext"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsestsa" aria-expanded="false" aria-controls="collapsestsa">Landmarks and Tourist Attractions Near Go Hotels Otis Manila</a> </h4>
+</div>
+<div id="collapsestsa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sightto">
+<div class="panel-body">
+<p class="prsgtext">When visitors stay in hotels in Manila, they’ll be treated to what the city has to offer. Reserve a room at Go Hotels Otis Manila and take the chance to go explore more around Paco and its neighboring areas. Here are some of the nearby landmarks and tourist attractions that you can look forward to visiting: </p>
+<section class="splide tosee prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" >
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" >
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list ssbcreadmore">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/museum.png" alt="museum">
+<p class="titleslide " >Paco Park</p>
+<div class="drawer" data-height="570">
+<p class="contentslide" >For a breath of fresh air and the opportunity to take stunning photos, make sure to visit Paco Park. Take a leisurely stroll along the park’s walkways and get a glimpse of its beautiful stone architecture, fountains, <span class="more"> and flowerbeds. Say a prayer at the Chapel of St. Pancratius if you’re so inclined, and sit in for one of the park’s occasional free concerts or cultural events courtesy of the local tourism office. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/maokan.png" alt="maokan">
+<p class="titleslide ">Binondo</p>
+<div class="drawer" data-height="770">
+<p class="contentslide" >No visit to the city of Manila is complete without a stopover at Binondo, or Manila Chinatown. Walk down Ongpin Street and other adjoining roads to shop,<span class="more"> take pictures, or get your fill of Filipino-Chinese specialties like fresh lumpia, toasted siopao, noodle soup, and dumpling</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">Intramuros</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >Intramuros was once the center of religious and educational activity in colonial Manila. Travel back in time and head over to the Walled City to encounter relics <span class="more"> of old Manila, such as the Manila Cathedral, San Agustin Church, Fort Santiago, and the Palacio del Gobernador. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">Rizal Park</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >Rizal Park is so named because it is the memorial site for the Philippines’ national hero. It’s worth visiting Rizal Park to pay respects at Dr. Jose Rizal’s <span class="more">  towering memorial, on top of other attractions like the park’s fountain, ornamental gardens, Orchidarium, and healing stone-studded Reflexology Walk. <span class="more"></span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">The National Museum Complex</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >Also within Rizal Park is the National Museum Complex, which comprises the National Museum of the Philippines, the National Museum of Fine Arts, the National Museum <span class="more"> of Natural History, and the National Museum of Anthropology. If you’re a history nut, an art aficionado, or simply someone who loves learning at venues like museums, be sure to visit any one of these sites.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">The Cultural Center of the Philippines</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >Paco is a short distance away from the Cultural Center of the Philippines (CCP) Complex on Roxas Boulevard in Pasay City. Catch a show, a film, <span class="more"> or an exhibit in one of CCP’s theaters or galleries, and walk to the nearby Harbour Square for the most picturesque view of Manila’s skyline over the water. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+</ul> 
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whenis">
+<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewbtv" aria-expanded="false" aria-controls="collapsewbtv"> <p class="hrsgtext">Go Hotels Otis Manila</p> </a> </h4>
+</div>
+<div id="collapsewbtv" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whenis">
+<div class="panel-body">
+<p class="prsgtext">Go Hotels Otis Manila is the budget hotel chain’s second property in Metro Manila and its sixth property overall. Our hotel is conveniently located in Paco, Manila City, guaranteeing access to the various schools, parks, hospitals, churches, and commercial establishments nearby. For travelers flying into the National Capital Region (NCR) for business or leisure, Go Hotels Otis Manila is only 45 minutes away from the Ninoy Aquino International Airport (NAIA). <br/> Looking for budget hotels in Manila that won’t compromise on comfort, safety, and service? Make Go Hotels Otis Manila your number one choice. Work or explore Manila City by day, and relax at night in a room that includes essentials like comfy beds, flat-screen TV, Wi-Fi access, a hot and cold shower, basic toiletries, and room service. Book at Go Hotels Otis Manila now!</p>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="tocare">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsehtc" aria-expanded="false" aria-controls="collapsehtc"><p class="hrsgtext">Go Hotels Otis Manila is Happy to CARE</p></a> </h4>
+</div>
+<div id="collapsehtc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tocare">
+<div class="panel-body">
+<p class="prsgtext">We are one with the other properties in the Robinsons Hotel and Resorts group in committing to CARE, or to Create A Remarkable Experience for every Juan. For us, observing the CARE standard means following sustainable and ethical business practices, ensuring the satisfaction and welfare of our guests and employees, and complying with New Normal protocols.  </p>
+<p class="prsgtext">In accordance with health and safety rules set by the World Health Organization (WHO) and the Philippines’ Department of Health (DOH), Go Hotels Otis Manila observes the Circle of Clean standard. We have elevated our cleaning, sanitation, and hygiene protocols to include the use of touchless pre-payment, physical distance markers, luggage disinfection, and pre-arranged meal sets among others. Guests can be at peace knowing that Go Hotels Otis Manila prioritizes their welfare and will deliver a hotel experience that factors in their health and safety. </p>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="reserve">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapseryr" aria-expanded="false" aria-controls="collapseryr"><p class="hrsgtext">Book a Room at Go Hotels Otis Manila Today!</p></a> </h4>
+</div>
+<div id="collapseryr" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reserve">
+<div class="panel-body">
+<p class="prsgtext">For single bookings, group bookings, and even bookings on behalf of another person, make a reservation here on Go Hotels Otis Manila’s website. Be sure to check out our Special Offers section for further discounts and promo packages. Score an even better deal on your booking through our seasonal rates, flash sales, or discounts when you support one of our partner establishments. </p>
+<p class="prsgtext">Look forward to a budget hotel experience that will allow you to relax, stay comfortable, and explore the city of Manila on your own terms. Check the room availability and rates for your preferred dates, and reserve your room at Go Hotels Otis Manila!</p>
+</div>
+</div>
+</div>
+
+</div>
+        
+    </body>
+
+    <script>
+    function readMore (element) {
+        const readMoreEl = document.querySelector(element)
+        const drawers = readMoreEl.querySelectorAll(".drawer")
+        drawers.forEach(drawerelement=> {
+            const dots = drawerelement.querySelector(".dots");
+            const moreText = drawerelement.querySelector(".more");
+            const btnText = drawerelement.querySelector(".myBtn");
+            btnText.addEventListener("click", ()=> {
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            })
+        })
+    }
+    readMore(".ssbcreadmore")
+    new Splide(".whygo", { type : 'loop', }).mount()
+    new Splide(".whofor", { type : 'loop', }).mount()
+    new Splide(".tosee",{  type : 'loop', }).mount()
+    </script>
+</html>
