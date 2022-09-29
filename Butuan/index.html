@@ -1,0 +1,445 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bacolod</title>
+
+        <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+       <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    </head>
+
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ghh-wrapper{
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+        }
+      
+       .more {
+        display: none;
+        animation-name: viewmore;
+        animation-duration: 1s;
+       }
+       .splide__list {
+        height: max-content;
+       }
+        .hrsgtext {
+            font-family: Semringah;
+            font-size: 40px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00a84f;
+            margin: 0;
+        }
+        .prsgtext {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2;
+            letter-spacing: .93px;
+            color: #343434;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .contentslide {
+            margin-bottom: 0;
+        }
+        /* readmore */
+        .myBtn {
+            background-color: transparent;
+            border: none;
+            color: #04c860 ;
+            margin: 0;
+            font-size: 20px;
+        }
+        .myBtn:hover {
+            border-radius: 50px;
+            padding: 0 10px;
+        }
+        .titledraw {
+            border: none;
+            background-color: transparent ;
+            font-family: Semringah;
+            color: #f37021;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            transition: all 500ms ease-in-out;
+        }
+        .titledraw img {
+            margin-bottom: 15px;
+            height: 100px;
+        }
+        .titledraw i {
+            padding-bottom: 5px;
+            font-family: 700;
+        }
+        .contentdraw {
+            animation-name: viewmore;
+            animation-duration: 1s;
+        }
+        .drawer {
+            overflow: hidden;
+            position: relative;
+            transition: all 500ms ease-in-out;
+        }
+        .slidewraper {
+            padding: 0 100px;
+        }
+        .titleslide {
+            font-family: Semringah;
+            color: #f37021;
+            margin-top: 10px;
+        }
+        .splide__arrow img {
+            height: 80px;
+        }
+        .tosee .splide__slide img {
+            height: 250px;
+        }
+        .panel-title a {
+            color: #00a84f;
+        }
+        .panel-heading {
+            border: 1px solid #00a84f !important;
+            padding: 0;
+        }
+        .panel-title {
+            background-color: white;
+            padding: 12px;
+        }
+        @media only screen and (max-width: 700px) {
+            .slidewraper {
+                padding: 0;
+            } 
+            .splide__arrow img {
+                height: 40px;
+            }
+            .hrsgtext {
+                font-size: 32px;
+                width: 100%;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+             .tosee .splide__slide img {
+                height: 150px;
+            }
+            .hrsgtext {
+                font-size: 24px;
+            }
+        }
+        /*  Animation */
+        @keyframes viewmore {
+            from {opacity: 0 ;}
+            to {opacity: 1 ;}
+        }
+    </style>
+
+    <body>
+
+<div class="panel-group ghh-wrapper" id="gh-accordion" role="tablist" aria-multiselectable="true">
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whychoose">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewcgh" aria-expanded="false" aria-controls="collapsewcgh"> <p class="hrsgtext">Why Choose Go Hotels in Iligan City?</p> </a> </h4>
+</div>
+<div id="collapsewcgh" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whychoose">
+<div class="panel-body">
+<p class="prsgtext">Accommodations usually comprise a big part of one’s travel budget. If you’re looking for a hotel in Iligan City that will help you stretch your budget without sacrificing amenities, Go Hotels Iligan is your best bet.<br/>Here are a few reasons to stay at Go Hotels the next time you’re in Iligan City:</p>
+<section class="splide whygo prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/check-in.png" height="100px">
+<br> <i class="bi bi-plus"></i>Quality Service by Go Hotels</i>
+</div>
+<p class="contentdraw" >As part of Robinsons Hotels and Resorts, all Go Hotels provide a high level of standardized service. If you have visited other Go Hotels in the past, you can expect to enjoy the same amenities and friendly service at Go Hotels Iligan.</p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/fireplace.png" height="100px">
+<br> <i class="bi bi-plus"></i>A Full Range of Amenities</i>
+</div>
+<p class="contentdraw " >As with all Go Hotels, rooms at Go Hotels Iligan feature a full range of amenities, including Wi-Fi, flat-screen TVs, air-conditioning, hot and cold showers, and toiletries. Additionally, all rooms come with large sanitized beds, ensuring you have a relaxing night’s rest.</p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-sm-12">
+<div class="titledraw">
+<img src="/saving.png" height="100px">
+<br> <i class="bi bi-plus"></i>Budget-Friendly Rates</i>
+</div>
+<p class="contentdraw" >Go Hotels Iligan is a budget-friendly option for a restful stay in Iligan. Not only does the hotel provide all the amenities expected at the price point, but it also delivers a bit more, making the accommodations great value for money. <br/>As with all Go Hotels, Go Hotels Iligan is also strategically located close to transportation options that can take you to all points of Iligan City and beyond. If you’re on a budget but don’t want to take risks with your travel accommodations, Go Hotels Iligan is an excellent choice. </p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whois">
+<h4 class="panel-title hrsgtext"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewghf" aria-expanded="false" aria-controls="collapsewghf">Who Should Check Out Go Hotels Iligan?</a> </h4>
+</div>
+<div id="collapsewghf" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whois">
+<div class="panel-body">
+<p class="prsgtext">Anyone traveling to Iligan City on a budget should consider Go Hotels Iligan. With its full range of amenities, accessible location, and reasonable rates, it offers a good mix of perks for travelers on a budget.<br/>Check out Go Hotels Iligan if you’re one of the types of travelers below: </p>
+<section class="splide whofor prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" height="80">
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" height="80">
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw" >
+<img src="/busy.png" height="100px">
+<br> <i class="bi bi-plus"></i> Business Travelers
+</div>
+<p class="contentdraw" >Business travelers going to Iligan should put Go Hotels Iligan on top of their list. Go Hotels Iligan is located reasonably close to the city center and local transport hubs, making it a good place to stay if you’re in town for a convention or a site visit. The hotel’s budget rates are also great for keeping corporate expense accounts under control. <br/>The hotel also offers conference rooms good for 15 to 125 persons, making it a good place to stage large corporate gatherings. Guests also get access to a quality Wi-Fi connection and in-room phones, making Go Hotels Iligan an excellent option for working remotely. </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/solo.png" height="100px">
+<br> <i class="bi bi-plus"></i> Solo Explorers
+</div>
+<p class="contentdraw " >Iligan is a quiet and charming city that’s full of natural wonders. If you’re interested in checking out the city at your own pace, you’ll want affordable but comfortable accommodations. If you want to maximize your budget for exploring Iligan, Go Hotels Iligan is your best choice.  </p>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/couple.png" height="100px">
+<br> <i class="bi bi-plus"></i> Couples
+</div>
+<p class="contentdraw " >As with all Go Hotels, Go Hotels Iligan is a great option for a weekend getaway. If you’re traveling to Iligan with your spouse or significant other and want to spend more of your budget exploring the city’s many sights, consider our affordable yet fully featured rooms.  </p>
+</div>
+<div class="col-lg-6 col-sm-12">
+<div class="titledraw">
+<img src="/group.png" alt="groups" height="100px"> 
+<br> <i class="bi bi-plus"></i> Adventure-Seeking Barkadas
+</div>
+<p class="contentdraw " >Iligan is known for its wealth of hiking trails as well as its underrated food options. If you’re interested in checking out Iligan’s natural wonders and its emerging food scene with your barkada, Go Hotels is a great option. With its convenient location within Iligan, it’s the perfect place to stage your barkada adventures in Iligan. </p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="sightto">
+<h4 class="panel-title hrsgtext"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsestsa" aria-expanded="false" aria-controls="collapsestsa">Sights to See in Iligan City</a> </h4>
+</div>
+<div id="collapsestsa" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sightto">
+<div class="panel-body">
+<p class="prsgtext">Below are a few points of interest located within Iligan City. Some of these locations can be reached by public transport or on foot from Go Hotels Iligan. There are also car rental and taxi services that can take you to any point in Iligan City as well as to adjoining municipalities. Please feel free to ask our hotel staff for directions and suggestions.</p>
+<section class="splide tosee prsgtext" aria-label="">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-left.png" alt="Prev" >
+</button>
+<button class="splide__arrow splide__arrow--next">
+<img src="https://www.gohotels.ph/sites/all/themes/itechgohotels/images/homepage/arrow-carousel-right.png" alt="Next" >
+</button>
+</div>
+<div class="splide__track">
+<ul class="splide__list ssbcreadmore">
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/museum.png" alt="museum">
+<p class="titleslide " >Waterfalls</p>
+<div class="drawer" data-height="570">
+<p class="contentslide" >Iligan City is famous throughout the country for its collection of majestic waterfalls, with 24 major waterfalls located either within its city limits or just a short distance away. Of these, <span class="more">Maria Cristina Falls is probably the most well-known outside of Iligan. In addition to the city's famous waterfalls, there are dozens of streams and other freshwater features within a short distance from the hotel. <br/>Some of the most-visited falls include Maria Cristina, Tinago, Limunsudan, Mimbalut, Dodiongan, Kalubihon, and Pampam. Aside from the 24 major waterfalls, there are also other falls that are unnamed that are just outside city limits. You can ask the hotel staff the best way to get to any of the most popular falls and water features.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/maokan.png" alt="maokan">
+<p class="titleslide ">Hindang Cave</p>
+<div class="drawer" data-height="770">
+<p class="contentslide" >This challenging spelunking spot is not for everyone. The uphill trail leading up to this spot is best tackled by experienced hikers. However, those<span class="more"> who can complete the half-day trek can experience one of the best spelunking sites in the country. Hikers wishing to explore the cave will need to pay a small trekking fee at the barangay hall. For the safest experience, it’s important to take on the services of a qualified tour guide as well.
+</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">Iligan Public Plaza</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >Located in Iligan’s historic downtown area, the public plaza is a popular site for recreational and social activities. It is also the site of a popular weekend night market.<span class="more"> If you want to get a quick sense of Iligan’s people and culture, visiting the plaza should give you a good introduction. </span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">St. Michael’s Cathedral</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >While relatively new by the standards of most Philippine cathedrals, the Cathedral of Saint Michael the Archangel is, nevertheless, a central part of the Iliganon<span class="more">  identity. Each September, a statue of Saint Michael the Archangel that is usually set in a high alcove inside the cathedral is moved to a lower nook located outside, as part of the “Diyandi/Kasadya” festival.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-lg-6 col-sm-12">
+<img src="/manokan.png" alt="maokan">
+<p class="titleslide ">Paseo de Santiago</p>
+<div class="drawer" data-height="660">
+<p class="contentslide" >This seaside park is half a kilometer long and offers a great view of Iligan Bay. The park is a popular picnic spot and is a sanctuary for sea creatures endemic <span class="more"> to this part of Mindanao. Loud activities are highly discouraged here, making it a favorite hangout spot for some Iliganons.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+<div class="col-lg-6 col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">NPC Nature’s Park</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >This park is the site of the famous Maria Cristina Falls. It is named after the publicly-owned National Power Corporation, which runs the park and operates a hydroelectric power <span class="more">generation facility within its limits. The site also contains zoological and botanical gardens featuring a variety of native fauna and flora. There are also opportunities to see wild animals roaming free throughout the park.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+<li class="splide__slide">
+<div class="row slidewraper">
+<div class="col-sm-12">
+<img src="/pala.png" alt="maokan">
+<p class="titleslide ">Villa Gracia</p>
+<div class="drawer" data-height="550">
+<p class="contentslide" >You no longer have to go to Cagayan De Oro to experience the unique thrill of navigating fast-moving river currents. The Villa Gracia resort is the first of its <span class="more">kind in Iligan to offer a true white water rafting experience. It is located in a quick-flowing upstream portion of the Mandulog River, just 15 kilometers away from downtown Iligan.</span><span class="dots">...</span></p>
+<button class="myBtn">Read more</button>
+</div>
+</div>
+</div>
+</li>
+</ul> 
+</div>
+</section>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="whenis">
+<h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsewbtv" aria-expanded="false" aria-controls="collapsewbtv"> <p class="hrsgtext">When Is the Best Time to Visit Iligan City?</p> </a> </h4>
+</div>
+<div id="collapsewbtv" class="panel-collapse collapse" role="tabpanel" aria-labelledby="whenis">
+<div class="panel-body">
+<p class="prsgtext">Most Iliganons might suggest that you visit Iligan City in late September, as this is when the city’s Diyandi Festival is held. Also called the “Kasadya Festival”, Diyandi is a feast in honor of St. Michael the Archangel, the city’s patron. It is also a commemoration of the union of the Maranao and Higa-onon peoples who are native to the area. <br/> Because of the large number of local tourists visiting the area during this time, visitors interested in observing the Diyandi Festival should book their hotel in Iligan City a few months in advance.<br/>If you’re interested in enjoying Iligan’s many outdoor activities, you may want to avoid visiting during the hottest and wettest months. If the heat and rain are a concern, you may want to book hotel accommodations from mid-December to mid-April, as these are the driest, coolest times of the year.</p>
+</div>
+</div>
+</div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="tocare">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapsehtc" aria-expanded="false" aria-controls="collapsehtc"><p class="hrsgtext">Happy to CARE</p></a> </h4>
+</div>
+<div id="collapsehtc" class="panel-collapse collapse" role="tabpanel" aria-labelledby="tocare">
+<div class="panel-body">
+<p class="prsgtext">At Go Hotels Iligan, you’ll receive a standard of service that goes beyond what you’d expect of a budget hotel. Whether you’re staying at our hotel in Iligan or any of the other Go Hotels in the Philippines, you are guaranteed a high level of service following Go Hotels’ CARE framework. </p>
+<p class="prsgtext">All Robinsons Hotels and Resorts are committed to CARE: Create A Remarkable Experience. CARE is a total service-oriented approach to business that safeguards the environment and the wider community. Through CARE, Go Hotels ensures every Juan enjoys excellent service with a conscientious approach. </p>
+<p class="prsgtext">If you’re visiting Iligan City, make sure to book your stay at Go Hotels. To start booking, get in touch with our Customer Service Team or visit the Go Hotels Website.</p>
+</div>
+</div>
+</div>
+
+<!-- <div class="panel panel-default">
+<div class="panel-heading" role="tab" id="reserve">
+<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#gh-accordion" href="#collapseryr" aria-expanded="false" aria-controls="collapseryr"><p class="hrsgtext">Book a Room at Go Hotels Otis Manila Today!</p></a> </h4>
+</div>
+<div id="collapseryr" class="panel-collapse collapse" role="tabpanel" aria-labelledby="reserve">
+<div class="panel-body">
+<p class="prsgtext">For single bookings, group bookings, and even bookings on behalf of another person, make a reservation here on Go Hotels Otis Manila’s website. Be sure to check out our Special Offers section for further discounts and promo packages. Score an even better deal on your booking through our seasonal rates, flash sales, or discounts when you support one of our partner establishments. </p>
+<p class="prsgtext">Look forward to a budget hotel experience that will allow you to relax, stay comfortable, and explore the city of Manila on your own terms. Check the room availability and rates for your preferred dates, and reserve your room at Go Hotels Otis Manila!</p>
+</div>
+</div>
+</div> -->
+
+</div>
+        
+    </body>
+
+    <script>
+    function readMore (element) {
+        const readMoreEl = document.querySelector(element)
+        const drawers = readMoreEl.querySelectorAll(".drawer")
+        drawers.forEach(drawerelement=> {
+            const dots = drawerelement.querySelector(".dots");
+            const moreText = drawerelement.querySelector(".more");
+            const btnText = drawerelement.querySelector(".myBtn");
+            btnText.addEventListener("click", ()=> {
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+            })
+        })
+    }
+    readMore(".ssbcreadmore")
+    new Splide(".whygo", { type : 'loop', }).mount()
+    new Splide(".whofor", { type : 'loop', }).mount()
+    new Splide(".tosee",{  type : 'loop', }).mount()
+    </script>
+</html>
