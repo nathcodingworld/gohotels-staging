@@ -55,26 +55,49 @@
         margin-top: 60px;
     }
  
-    .splide__arrow  {
-        display: none;
+    .splide__arrows--ttb .splide__arrow--next,
+    .splide__arrows--ttb .splide__arrow--prev  {
+        top: 100%;
+        width: 60px;
+        background-color: #9d1c1f;
+        color: white;
+    }
+    .splide__arrows--ttb .splide__arrow--prev {
+        left: calc(100% - 80px);
+    }
+    .splide__arrows--ttb .splide__arrow--next {
+        left: 100% ;
+    }
+    .splide__arrows--ttb .splide__arrow {
+   
+        transform: translate(-100%, -100%);
+    }
+    .splide__arrow {
+        border-radius: 2px;
     }
     .carousel-control {
         background-image: none !important;
+        width: 50px;
     }
+    .glyphicon-menu-left,
     .glyphicon-menu-right {
        position: absolute;
        top: 50%;
+       color: #9d1c1f;
+    }
+    .glyphicon-menu-right {
        right: 0;
     }
     .glyphicon-menu-left {
-       position: absolute;
-       top: 50%;
        left: 0;
     }
     .ulflex {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+    }
+    .splide__arrow:disabled {
+        display: none;
     }
 </style>
 <body>
@@ -86,6 +109,15 @@
                 <section class="splide innerslide innerslideone" aria-labelledby="ah-heading">
                     <h2 class="carousel-heading" id="ah-heading">About Hotel</h2>
                     <div class="h2div"></div>
+
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev">
+                            Prev
+                        </button>
+                        <button class="splide__arrow splide__arrow--next">
+                            Next
+                        </button>
+                  </div>
                   
                     <div class="splide__track">
                           <ul class="splide__list">
@@ -112,6 +144,15 @@
             <section class="splide innerslide innerslidetwo" aria-labelledby="what-heading">
                 <h2 class="carousel-heading" id="what-heading">What Makes Summit Ridge Stand Out Among Tagaytay Hotels?</h2>
                 <div class="h2div"></div>
+
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        Prev
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        Next
+                    </button>
+                </div>
               
                 <div class="splide__track">
                       <ul class="splide__list">
@@ -126,20 +167,24 @@
                         </li>
                         <li class="splide__slide">
                             <i>All the Amenities You Need</i>
+                            <div>&nbsp;</div>
                             <p>Are you the type of traveler who needs Wi-Fi to be able to work? Do you want features like a hair dryer to help you get ready for a big occasion? For a hotel that can meet all your needs and more, consider Summit Ridge Tagaytay for its wealth of amenities for business and leisure travelers. </p>
                         </li>
                         <li class="splide__slide">
                             <i>Excellent Value for Money</i>
+                            <div>&nbsp;</div>
                             <p>While it’s understandable that midscale and luxury hotels will charge more than budget accommodations, it’s possible to get a premium hospitality experience without breaking the bank here at Summit Ridge Tagaytay.</p>
                             <p>If you’re always on the lookout for promo packages and discounted rates on accommodations, you’ll be happy to know that Summit Ridge Tagaytay offers such promotions for both business and leisure travelers. Browse our Special Offers page to learn more and to secure an excellent deal.  </p>
                         </li>
                         <li class="splide__slide">
                             <i>Suitability for the Occasion</i>
+                            <div>&nbsp;</div>
                             <p>Booking a hotel venue for a wedding? You’ll want one with plenty of room to decorate according to the couple’s wishes. Need a professional venue for a MICE event like a business conference? You’ll need a hotel with the necessary facilities and equipment for making presentations easier to deliver to large audiences.</p>
                             <p>If you’re intending to book a hotel for any important dates, you can’t go wrong with Summit Ridge Tagaytay, as our facilities are conducive for such occasions or events. Realize the full potential of your event and leave your attendees with good memories, all by booking an appropriate venue like Summit Ridge Tagaytay.</p>
                         </li>
                         <li class="splide__slide">
                             <i>Fast and Seamless Booking Experiences</i>
+                            <div>&nbsp;</div>
                             <p>If you’re looking for a hotel that offers several convenient options for booking your Tagaytay hotel room, you’re in the right place. We allow our customers to make their reservations through our official website or certain travel aggregator websites. Settling hotel fees is just as easy, too, as we accept payments via credit card and bank deposit.</p>
                             <p>Indeed, you can count on a hotel like Summit Ridge Tagaytay for a fast, seamless, and modern reservation process. Our booking process should tell you enough about how seriously we take our customer experience.</p>
                         </li>
@@ -151,6 +196,15 @@
             <section class="splide innerslide innerslidethree" aria-labelledby="why-heading">
                 <h2 class="carousel-heading" id="why-heading">What Customers Love About Summit Ridge Tagaytay</h2>
                 <div class="h2div"></div>
+
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        Prev
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        Next
+                    </button>
+                </div>
               
                 <div class="splide__track">
                       <ul class="splide__list">
@@ -196,6 +250,15 @@
             <section class="splide innerslide innerslidefour" aria-labelledby="when-heading">
                 <h2 class="carousel-heading" id="when-heading">The Best Occasions to Celebrate and Events to Host at Summit Ridge Tagaytay</h2>
                 <div class="h2div"></div>
+
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        Prev
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        Next
+                    </button>
+                </div>
               
                 <div class="splide__track">
                       <ul class="splide__list">
@@ -232,43 +295,18 @@
             </section> 
           </div>
           <div class="item">
-            <section class="splide innerslide innerslidefive" aria-labelledby="amm-heading">
-                <h2 class="carousel-heading" id="amm-heading">Amenities</h2>
-                <div class="h2div"></div>
-              
-                <div class="splide__track">
-                      <ul class="splide__list">
-                        <li class="splide__slide">
-                            <p style="text-align: center;">Some of the amenities you’ll enjoy exclusively at Summit Ridge Tagaytay are the following: </p>
-                            <div class="ulflex">
-                                <ul>
-                                    <li>Infinity Pool</li>
-                                    <li>Spa</li>
-                                    <li>Fitness Center</li>
-                                    <li>Basketball Court</li>
-                                    <li>Badminton Court</li>
-                                </ul>
-                                <ul>
-                                    <li>Raintree Ballroom </li>
-                                    <li>Breakout Rooms</li>
-                                    <li>Sky Lounge</li>
-                                    <li>Summit Learning Center</li>
-                                    <li>Events Lawn</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="splide__slide">
-                            <p>Check out our full list of amenities in detail, and see what features they come with, by clicking on our Leisure & Wellness and Event Spaces & Dining sections. If you have any further questions about our amenities, don’t hesitate to reach out to Summit Ridge Tagaytay’s customer service team.</p>
-                        </li>
-                
-                      </ul>
-                </div>
-            </section> 
-          </div>
-          <div class="item">
             <section class="splide innerslide innerslidesix" aria-labelledby="book-heading">
                 <h2 class="carousel-heading" id="book-heading">Special Offers</h2>
                 <div class="h2div"></div>
+
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        Prev
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        Next
+                    </button>
+                </div>
               
                 <div class="splide__track">
                       <ul class="splide__list">
@@ -285,6 +323,15 @@
             <section class="splide innerslide innerslideseven" aria-labelledby="book-heading">
                 <h2 class="carousel-heading" id="book-heading">Book a Room at Summit Ridge Tagaytay Today!</h2>
                 <div class="h2div"></div>
+
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        Prev
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        Next
+                    </button>
+                </div>
               
                 <div class="splide__track">
                       <ul class="splide__list">
@@ -310,16 +357,16 @@
 
 </body>
 <script>
-    const sections = [ ".innerslideone", ".innerslidetwo", ".innerslidethree", ".innerslidefour", ".innerslidefive", ".innerslidesix", ".innerslideseven"].forEach(el=> {
+    const sections = [ ".innerslideone", ".innerslidetwo", ".innerslidethree", ".innerslidefour", ".innerslidesix", ".innerslideseven"].forEach(el=> {
         new Splide( el, {
             direction: 'ttb',
             height   : '20rem',
             drag   : false,
-            wheel: true,
+            wheel: true
         } ).mount()
     })
     $('.carousel').carousel({
-        interval: 0
+        interval: 4000
     })
 </script>
 </html>
