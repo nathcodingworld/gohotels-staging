@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Blogs listing</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    .headbg {
+        background:  linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0,.4)), url(../media/aaa.png);
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+        color: white;
+    }
+    .headbg h1 {
+        font-weight: 600;
+        font-size: 60px;
+    }
+    .headbg p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.67;
+        letter-spacing: 8;
+        max-width: 1500px;
+        padding: 0 15px; 
+        text-align: center;
+    }
+    .headbg a {
+        margin-top: 200px;
+    }
+    .bloglist {
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+    .card {
+        width: 280px;
+        margin-top: 50px;
+    }
+</style>
+<body>
+    <header>
+        <div class="headbg">
+            <img src="../media/logo.png" alt="logo">
+            <h1>Blogs</h1>
+            <p>Planning your next vacation within the <b>Philippines?</b> Look through our blogs for travel tips, tricks, inspiration, and more!</p>
+            <a href="#bloglist">
+                <svg width="27" height="50" viewBox="0 0 27 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="1" width="25" height="48" rx="12.5" stroke="white" stroke-width="2"/>
+                <line x1="13.5" y1="20.5" x2="13.5" y2="28.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="bloglist row" id="bloglist">
+
+            <!-- Blog List Card Template -->
+            <!-- <div class="col col-md-4 col-lg-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="[image source]" class="card-img-top" alt="[image alt]">
+                    <div class="card-body">
+                        <h5 class="card-title">[Blog title]</h5>
+                        <p class="card-text">[Blog Description]</p>
+                        <a href="[Blog Link]" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-lg-3">
+                <div class="card">
+                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-body">
+                        <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                        <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
