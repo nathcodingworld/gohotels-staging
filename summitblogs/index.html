@@ -43,8 +43,41 @@
     }
     .card {
         width: 280px;
-        margin-top: 50px;
+        margin: 25px auto;
+        min-height: 450px; 
     }
+    .card .card-img-top img:hover {
+        scale: 1.2;
+        transition: scale 500ms ease-in-out;
+    }
+    .card-img-top {
+        overflow: hidden;
+    }
+    .card a {
+        border: solid 1px orange;
+        color: orange;
+        margin: 20px auto;
+    }
+    .card a:hover {
+        background-color: orange;
+        color: white;
+    }
+    .card h5 {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -.02em;
+        font-weight: 700;
+        margin: 20px auto;
+    }
+    .card p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #343434;
+        margin: 20px auto;
+    } 
 </style>
 <body>
     <header>
@@ -63,95 +96,114 @@
     <section>
         <div class="bloglist row" id="bloglist">
 
-            <!-- Blog List Card Template -->
-            <!-- <div class="col col-md-4 col-lg-3">
+        <!-- 
+            Blog List Card Template  
+
+            <div class="col col-md-4 col-lg-3">
                 <div class="card" style="width: 18rem;">
                     <img src="[image source]" class="card-img-top" alt="[image alt]">
                     <div class="card-body">
                         <h5 class="card-title">[Blog title]</h5>
                         <p class="card-text">[Blog Description]</p>
-                        <a href="[Blog Link]" class="btn btn-primary">Read full article</a>
+                        <a href="[Blog Link]" class="btn">Read full article</a>
                     </div>
                 </div>
-            </div> -->
+            </div> 
+        -->
 
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b1.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b2.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b1.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b2.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b1.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b2.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b1.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b1.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>
             <div class="col col-md-4 col-lg-3">
                 <div class="card">
-                    <img src="../media/b2.png" class="card-img-top" alt="blog image alt">
+                    <div class="card-img-top">
+                        <img src="../media/b2.png" alt="blog image alt">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
                         <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
-                        <a href="/blogs.html" class="btn btn-primary">Read full article</a>
+                        <a href="blogs.html" class="btn">Read full article</a>
                     </div>
                 </div>
             </div>

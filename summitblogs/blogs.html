@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Blogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        
+    }
+    .headbg {
+        background: linear-gradient(263.66deg, #3D3535 0%, #9D1C1F 100%);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 40px;
+        color: white;
+    }
+    .headbg h1 { 
+        font-family: 'Cormorant';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 47px;
+        line-height: 57px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #FFFFFF;
+    }
+    .headbg p {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.67;
+        letter-spacing: 8;
+        max-width: 1500px;
+        padding: 0 15px; 
+        text-align: center;
+    } 
+    .blog-container {
+        max-width: 1000px;
+        margin: 100px auto;
+    }
+    .blog-container img {
+        width: 100%;
+    }
+    .blog-container h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 40px;
+        color: rgba(157, 28, 31, 0.8);
+        margin: 25px 0 20px 0;
+    }
+    .blog-container p {
+        margin: 20px 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: 0.1em;
+        color: #333333;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.01);
+    }
+    .card {
+        width: 280px;
+        margin: 25px auto;
+        min-height: 450px; 
+    }
+    .card .card-img-top img:hover {
+        scale: 1.2;
+        transition: scale 500ms ease-in-out;
+    }
+    .card-img-top {
+        overflow: hidden;
+    }
+    .card a {
+        border: solid 1px orange;
+        color: orange;
+        margin: 20px auto;
+    }
+    .card a:hover {
+        background-color: orange;
+        color: white;
+    }
+    .card h5 {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -.02em;
+        font-weight: 700;
+        margin: 20px auto;
+    }
+    .card p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #343434;
+        margin: 20px auto;
+    } 
+    .bloglist-con {
+        max-width: 1100px;
+        margin: auto;
+    }
+</style>
+<body>
+    <header>
+        <!-- 
+            Header Template 
+            <div class="headbg">
+                <img src="../media/logo.png" alt="logo">
+                <h1>{ Blog Title }</h1>
+                <span>
+                    <p> { Blog date publish } | { Blog Category }</p>
+                </span>
+            </div>
+
+         -->
+        <div class="headbg">
+            <img src="../media/logo.png" alt="logo">
+            <h1>8 Cebu Spots That Will Thrill Your Foodie Friends</h1>
+            <span>
+                <p> january 01, 2022 | Features</p>
+            </span>
+        </div>
+    </header>
+    <section>
+        <div class="blog-container">
+            <!-- Content Here -->
+            <img src="../media/Top.png" alt="blog alt">
+            <h2>Dining at Summit Galleria Cebu</h2>
+            <p>Booking a three-day weekend stay at Cebu? Indulge in a little luxury dining at Summit Galleria Cebu in Cebu City. The Café Summit will offer hearty meals inspired by Cebu’s rich gastronomic history. You can start the day with the restaurant’s hearty breakfast set, combine entrées with pasta and salads, and then end your course with delectable desserts.</p>
+            <p>To save time, you may also want to reserve a room at a hotel in Cebu for easy access to the city’s best restaurants and other top tourist destinations. The Summit Galleria Cebu Hotel combines comfort and style through its complete amenities and artistic contemporary design. Both your eyes and mouth will feast when you stay in this hotel.</p>
+        </div>
+            <!-- End of Content -->
+    </section>
+    <section>
+        <div class="bloglist-con">
+            <div class="row">
+            <!-- 
+                Blog List Card Template  
+
+                <div class="col col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="[image source]" class="card-img-top" alt="[image alt]">
+                        <div class="card-body">
+                            <h5 class="card-title">[Blog title]</h5>
+                            <p class="card-text">[Blog Description]</p>
+                            <a href="[Blog Link]" class="btn">Read full article</a>
+                        </div>
+                    </div>
+                </div> 
+            -->
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="../media/b1.png" alt="blog image alt">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                            <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                            <a href="blogs.html" class="btn">Read full article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="../media/b2.png" alt="blog image alt">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                            <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                            <a href="blogs.html" class="btn">Read full article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-img-top">
+                            <img src="../media/b1.png" alt="blog image alt">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">4 Heart-Pumping Activities Thrill-Seekers Can Do in the Bicol Region</h5>
+                            <p class="card-text">If you’re a traveler looking for a vacation spot to de-stress and experience tranquility amidst nature, Bicol is an ideal hideaway.</p>
+                            <a href="blogs.html" class="btn">Read full article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>
