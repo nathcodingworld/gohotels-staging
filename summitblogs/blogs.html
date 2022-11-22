@@ -113,6 +113,38 @@
         max-width: 1100px;
         margin: auto;
     }
+    .bloglist-con h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 60px;
+        color: #000000;
+        margin: auto;
+        width: max-content; 
+    }
+    .bloglist-con .divider {
+        height: 8px;
+        width: 150px;
+        background: #9D1C1F;
+        margin: 30px auto;
+    }
+    .bloglist-con .viewallblog {
+        border: solid 1px orange;
+        color: orange;
+        margin: 20px auto;
+    }
+    .bloglist-con .viewallblog:hover {
+        background-color: orange;
+        color: white;
+    }
+    .btn-vab-wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 50px 0;
+    }
 </style>
 <body>
     <header>
@@ -142,11 +174,16 @@
             <h2>Dining at Summit Galleria Cebu</h2>
             <p>Booking a three-day weekend stay at Cebu? Indulge in a little luxury dining at Summit Galleria Cebu in Cebu City. The Café Summit will offer hearty meals inspired by Cebu’s rich gastronomic history. You can start the day with the restaurant’s hearty breakfast set, combine entrées with pasta and salads, and then end your course with delectable desserts.</p>
             <p>To save time, you may also want to reserve a room at a hotel in Cebu for easy access to the city’s best restaurants and other top tourist destinations. The Summit Galleria Cebu Hotel combines comfort and style through its complete amenities and artistic contemporary design. Both your eyes and mouth will feast when you stay in this hotel.</p>
+            <h2>Cebu Lumpia House</h2>
+            <p>An institution among Cebuanos, the Cebu Lumpia House has been serving locals since 1956. It started as a store that sold congee along Osmeña Boulevard. Since then, Chinese Cebuano families regularly visit the restaurant for its ho chia experience, which means “good to eat” in Hokkien.</p>
+            <p>Fil-Chi locals love going to Cebu Lumpia house for its fresh lumpia, ngohiong, and ba chang. You and your foodie friends should make sure to visit this historical Chinese restaurant to get a taste of Cebu City’s heritage.</p>
         </div>
             <!-- End of Content -->
     </section>
     <section>
         <div class="bloglist-con">
+            <h3>Blogs</h3>
+            <div class="divider"></div>
             <div class="row">
             <!-- 
                 Blog List Card Template  
@@ -199,8 +236,12 @@
                     </div>
                 </div>
             </div>
-            
+            <div class="btn-vab-wrapper"><a href="../summitblogs/index.html" class="btn viewallblog">View All Blogs</a></div>
         </div>
     </section>
+    <footer>
+        <!-- for presentation only -->
+        <div style="height: 500px; width: 100%; background-color: gray;"></div>
+    </footer>
 </body>
 </html>
