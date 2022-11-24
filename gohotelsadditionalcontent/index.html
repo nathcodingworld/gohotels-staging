@@ -1,0 +1,386 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Hotels | Additional Content</title>
+    <meta name="description" content="Static Html code refference for Go hotels additional content to be uploaded in drupal cms">
+    <link href="http://fonts.cdnfonts.com/css/semringah" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/css/splide.min.css">
+    <link href="../mainicon/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.1/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+    html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: Montserrat;
+    }
+    .ghh-wrapper{
+        max-width: 1200px;
+        margin: auto;
+        padding: 100px 0;
+    } 
+   .splide__list {
+    height: max-content;
+   }
+    .hrsgtext {
+        font-family: Semringah;
+        font-size: 40px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #00a84f;
+        margin: 0;
+    }
+    .prsgtext {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2;
+        letter-spacing: .93px;
+        color: #343434;
+        text-align: start;
+        padding: 10px 0;
+    } 
+    /* readmore */
+  
+    .titledraw {
+        border: none;
+        background-color: transparent ;
+        font-family: Semringah;
+        color: #f37021;
+        font-size: 20px;
+        padding: 10px;
+        text-align: left;
+        transition: all 500ms ease-in-out;
+    }  
+    /* splide  */
+    .slidewraper {
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .splide__slide {
+        background: #FFFAEB;
+    }
+    .titleslide {
+        font-family: Semringah;
+        color: #f37021;
+        margin-top: 10px;
+    }
+    .splide__arrow {
+        background: #f37021;
+    }
+    .splide__arrow svg {
+        fill: white;
+    }
+    .tosee .splide__slide img {
+        height: 250px;
+    }
+    .panel-title a {
+        color: #00a84f;
+    }
+    .panel-heading {
+        border: 1px solid #00a84f !important;
+        padding: 0;
+    }
+    .panel-title {
+        background-color: white;
+        padding: 12px;
+    }
+    /* modal option */
+    .btnwrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .modalbtn {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .modal-body {
+        padding: 0;
+    }
+    .modalbtn:hover {
+        background-color:beige;
+        border-radius: 20px;
+    }
+    .btntext {
+        padding: 0;
+        margin: 0;
+    }
+    button {
+        font-family: Montserrat !important;
+    }
+    section.prsgtext {
+        padding: 0;
+    }
+    p.prsgtext {
+        margin: 0 15px;
+    }
+    .modal-header .close {
+        background: #f37021;
+        color: white;
+        border-radius: 40px;
+        width: 30px;
+        height: 30px;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .slidewraper {
+            padding: 0;
+        } 
+ 
+        .hrsgtext {
+            font-size: 32px;
+            width: 100%;
+        }
+        .btnwrapper {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: Montserrat;
+        }
+        .modalbtn {
+            width: 100%;
+        }
+        .btntext {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+         .tosee .splide__slide img {
+            height: 150px;
+        }
+        .btntext {
+            font-size: 16px;
+        }
+        .hrsgtext {
+            font-size: 24px;
+        }
+        .prsgtext {
+            font-size: 14px;
+        }
+        .titledraw {
+            font-size: 18px;
+        }
+        .slidewraper  {
+            flex-direction: column;
+        }
+        .titledraw {
+            text-align: center;
+        }
+        .row {
+             margin-right: 15px; 
+             margin-left: 15px; 
+        }
+    }
+</style>
+
+<body>
+
+<div class="ghh-wrapper">
+
+<!-- Button trigger modal -->
+<div class="btnwrapper">
+    <button type="button" class="btn btn-lg modalbtn" data-toggle="modal" data-target="#whymodal"> 
+        <img src="../mainicon/hotel.png" alt="hotel" width="70"> 
+        <div class="btntext">Why Choose Go Hotels <br> in Otis, Manila? </div> 
+    </button>
+    <button type="button" class="btn btn-lg modalbtn" data-toggle="modal" data-target="#whomodal"> 
+        <img src="../mainicon/place.png" alt="hotel" width="70"> 
+        <div class="btntext">The Perfect Occasions to Stay <br> in Go Hotels Otis Manila</div> 
+    </button>
+    <button type="button" class="btn btn-lg modalbtn" data-toggle="modal" data-target="#whenmodal"> 
+        <img src="../mainicon/time.png" alt="hotel" width="70"> 
+        <div class="btntext">Book a Room at Go Hotels <br/> Otis Manila Today! </div>  
+    </button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="whymodal" tabindex="-1" role="dialog" aria-labelledby="whymodalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title hrsgtext" id="whymodalLabel">Why Choose Go Hotels in Otis, Manila??</h4>
+      </div>
+      <div class="modal-body">
+          <p class="prsgtext">The City of Manila is the second most populated city in NCR, and it’s a key location for many of Metro Manila’s business, leisure, and tourism activities. Visitors who want to stay in Manila overnight or longer have a wealth of accommodations to choose from, including midrange or luxury hotels and rented apartments. <br/>But what makes Go Hotels Otis Manila the ideal choice for your accommodations? Here’s why you should book with us for your next city adventure, business trip, or romantic getaway in the city of Manila.  </p>
+          <section class="splide whygo prsgtext" aria-label="">
+          <div class="splide__track">
+          <ul class="splide__list">
+          <li class="splide__slide">
+          <div class="row slidewraper">
+            <div class="col">
+                <img src="../mainicon/saving.png" height="100px">
+            </div>
+            <div class="col">
+                <h3 class="titledraw"> Maximum Comfort for the Best Price </h3>
+                <p class="contentdraw" >Despite its reputation as a budget hotel, Go Hotels Otis Manila doesn’t scrimp on all the necessary comforts for a pleasant stay. You’re guaranteed basic amenities like toiletries and air conditioning, as well as perks like high-quality non-allergenic pillows, an in-room safe, a hair dryer, and a strong Wi-Fi connection. For the price you pay, you’ll have more than enough to ensure full respite or a conducive atmosphere to do business. </p>
+            </div>
+          </div>
+          </li>
+          <li class="splide__slide">
+          <div class="row slidewraper">
+            <div class="col">
+                <img src="../mainicon/check-in.png" height="100px">
+            </div>
+          <div class="col">
+          <h3 class="titledraw">A Seamless Booking Experience</h3>
+          <p class="contentdraw" >You’ll be able to experience Go Hotels’ signature speed, convenience, and quality of service as soon as you book a room. Simply use our website to reserve a room on your preferred date and pay via credit card, bank deposit, or e-wallet transfer. It will be that easy to finalize your accommodations for a comfy stay in Go Hotels Otis Manila. </p>
+          </div>
+          </div>
+          </li>
+          <li class="splide__slide">
+            <div class="row slidewraper">
+                <div class="col">
+                    <img src="../mainicon/clean.png" height="100px">
+                </div>
+                <div class="col">
+                  <h3 class="titledraw">A Standard of Service That You Can Rely On</h3>
+                  <p class="contentdraw" >One of the advantages of staying in a hotel over staying in an alternative type of accommodation, like an apartment rental, is your access to standardized hotel services like housekeeping. You can be assured of a clean room, 24/7 hotel security, and round-the-clock assistance from Go Hotels Otis Manila’s friendly and well-trained staff. </p>
+                </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+              <div class="row slidewraper">
+              <div class="col"> 
+              <img src="../mainicon/city.png" height="100px"> 
+              </div>
+              <div class="col">
+                <h3 class="titledraw">A New Way to Experience the City of Manila</h3>
+                <p class="contentdraw" >Staying at Go Hotels Otis Manila will allow you to look at the City of Manila through new eyes, even if you have a modest budget. Check in today and enjoy the opportunity to go explore more of the city, immersing yourself in the heart of Manila through its commerce, culture, and cuisine. </p>
+              </div>
+              </div>
+          </li>
+          <li class="splide__slide">
+          <div class="row slidewraper">
+          <div class="col"> 
+          <img src="../mainicon/location.png" height="100px"> 
+          </div>
+          <div class="col">
+            <h3 class="titledraw">Excellent Location</h3>
+            <p class="contentdraw " >Go Hotels Otis Manila is a stone’s throw away from Robinsons Otis shopping mall, which houses establishments like drugstores, retail outlets, and restaurants. It is also within close proximity to eateries, government agencies, churches like Our Lady of Peñafrancia Parish and Santa Maria Goretti Parish, and tourist attractions like Paco Park, Rizal Park, and the Manila Baywalk. Enjoy quick access to essential goods and services in the Paco area, as well as a taste of Manila City’s old-world charm and nightlife</p>
+          </div>
+          </div>
+          </li>
+          </ul>
+          </div>
+          </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="whomodal" tabindex="-1" role="dialog" aria-labelledby="whomodalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title hrsgtext" id="whomodalLabel">The Perfect Occasions to Stay in Go Hotels Otis Manila </h4>
+      </div>
+      <div class="modal-body">
+          <p class="prsgtext">The ideal hospitality experience depends on factors like your budget, the number of people you’re traveling with, and the nature of your stay. Below are the four best occasions to check into a well-respected budget hotel like Go Hotels Otis Manila: </p>
+          <section class="splide whofor prsgtext" aria-label="">
+ 
+          <div class="splide__track">
+          <ul class="splide__list">
+          <li class="splide__slide">
+          <div class="row slidewraper">
+            <div class="col" >
+                <img src="../mainicon/busy.png" height="100px">
+            </div>
+            <div class="col">
+                <h3 class="titledraw">A Business Trip to See Manila-Based Clients or Business Partners</h3>
+                <p class="contentdraw" >We also welcome business travelers who want affordable but work-conducive accommodations for their upcoming business trips. If you’re in Manila to ink a business deal, visit your company headquarters in the city, or attend an industry event, consider checking into Go Hotels Otis Manila and making it your home base for the duration of your visit.  </p>
+            </div>
+          </div>
+          </li>
+          <li class="splide__slide">
+          <div class="row slidewraper">
+            <div class="col">
+                <img src="../mainicon/solo.png" height="100px"> 
+            </div>
+            <div class="col">
+                <h3 class="titledraw">A Solo Adventure</h3>
+                <p class="contentdraw " >For a solo walking tour of Manila or other similar adventure, it will make sense for you to choose accommodations that are light on your wallet. If you don’t anticipate spending too much time at the hotel and need just enough for a good night’s rest, then a budget room at Go Hotels Otis Manila is ideal.  </p>
+            </div>
+          </div>
+          </li>
+          <li class="splide__slide">
+          <div class="row slidewraper">
+            <div class="col">
+                <img src="../mainicon/couple.png" height="100px"> 
+            </div>
+            <div class="col">
+                <h3 class="titledraw">A Romantic Weekend Getaway</h3>
+                <p class="contentdraw " >Go Hotels Otis Manila is also a great choice for a relaxed couple who want to spend some time away from the world. Treat your partner to a simple but restful vacation at our hotel in Paco.  </p>
+            </div>
+          </div>
+          </li>
+          <li class="splide__slide">
+          <div class="row slidewraper">
+          <div class="col">
+          <img src="../mainicon/group.png" alt="groups" height="100px">  
+          </div>
+          <div class="col">
+            <h3 class="titledraw">A Laid-Back Staycation with Your Friends</h3>
+            <p class="contentdraw " >You should also consider Go Hotels Otis Manila for a staycation with your barkada. Go on a sightseeing tour, a food crawl, or a night out in one of Manila City’s bars and unwind together back at your hotel room.  </p>
+          </div>
+          </div>
+          </li>
+          </ul>
+          </div>
+          </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="whenmodal" tabindex="-1" role="dialog" aria-labelledby="whenmodalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title hrsgtext" id="whenmodalLabel">Book a Room at Go Hotels Otis Manila Today!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="prsgtext">For single bookings, group bookings, and even bookings on behalf of another person, make a reservation here on Go Hotels Otis Manila’s website. Be sure to check out our Special Offers section for further discounts and promo packages. Score an even better deal on your booking through our seasonal rates, flash sales, or discounts when you support one of our partner establishments. </p>
+        <p class="prsgtext">Look forward to a budget hotel experience that will allow you to relax, stay comfortable, and explore the city of Manila on your own terms. Check the room availability and rates for your preferred dates, and reserve your room at Go Hotels Otis Manila!</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    
+</body>
+
+<script>
+new Splide(".whygo", { type : 'loop', }).mount()
+new Splide(".whofor", { type : 'loop', }).mount()
+new Splide(".tosee",{  type : 'loop', }).mount()
+</script>
+</html>
