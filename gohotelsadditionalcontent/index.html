@@ -35,9 +35,12 @@
    .splide__list {
     height: max-content;
    }
+   .splide__pagination .is-active {
+    background-color: #f37021;
+   }
     .hrsgtext {
         font-family: Semringah;
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 400;
         font-stretch: normal;
         font-style: normal;
@@ -66,7 +69,7 @@
         background-color: transparent ;
         font-family: Semringah;
         color: #f37021;
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px;
         text-align: left;
         transition: all 500ms ease-in-out;
@@ -91,10 +94,7 @@
     }
     .splide__arrow svg {
         fill: white;
-    }
-    .tosee .splide__slide img {
-        height: 250px;
-    }
+    } 
     .panel-title a {
         color: #00a84f;
     }
@@ -119,6 +119,8 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        border: none;
+        box-shadow: none;
     }
     .modal-body {
         padding: 0;
@@ -126,7 +128,7 @@
     .modalbtn:hover {
         background-color:beige;
         border-radius: 20px;
-    }
+    } 
     .btntext {
         padding: 0;
         margin: 0;
@@ -138,7 +140,7 @@
         padding: 0;
     }
     p.prsgtext {
-        margin: 0 15px;
+        margin: 24px 15px;
     }
     .modal-header .close {
         background: #f37021;
@@ -147,14 +149,20 @@
         width: 30px;
         height: 30px;
     }
+    .modal-content {
+        border-radius: 15px;
+    }
+    .splide__slide {
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
 
     @media only screen and (max-width: 700px) {
         .slidewraper {
             padding: 0;
         } 
  
-        .hrsgtext {
-            font-size: 32px;
+        .hrsgtext { 
             width: 100%;
         }
         .btnwrapper {
@@ -170,21 +178,18 @@
             width: 100%;
         }
     }
-    @media only screen and (max-width: 500px) {
-         .tosee .splide__slide img {
-            height: 150px;
-        }
+    @media only screen and (max-width: 500px) { 
         .btntext {
             font-size: 16px;
         }
         .hrsgtext {
-            font-size: 24px;
+            font-size: 20px;
         }
         .prsgtext {
             font-size: 14px;
         }
         .titledraw {
-            font-size: 18px;
+            font-size: 16px;
         }
         .slidewraper  {
             flex-direction: column;
@@ -205,15 +210,15 @@
 
 <!-- Button trigger modal -->
 <div class="btnwrapper">
-    <button type="button" class="btn btn-lg modalbtn" data-toggle="modal" data-target="#whymodal"> 
+    <button type="button" class=" btn-lg modalbtn" data-toggle="modal" data-target="#whymodal"> 
         <img src="../mainicon/hotel.png" alt="hotel" width="70"> 
         <div class="btntext">Why Choose Go Hotels <br> in Otis, Manila? </div> 
     </button>
-    <button type="button" class="btn btn-lg modalbtn" data-toggle="modal" data-target="#whomodal"> 
+    <button type="button" class=" btn-lg modalbtn" data-toggle="modal" data-target="#whomodal"> 
         <img src="../mainicon/place.png" alt="hotel" width="70"> 
         <div class="btntext">The Perfect Occasions to Stay <br> in Go Hotels Otis Manila</div> 
     </button>
-    <button type="button" class="btn btn-lg modalbtn" data-toggle="modal" data-target="#whenmodal"> 
+    <button type="button" class=" btn-lg modalbtn" data-toggle="modal" data-target="#whenmodal"> 
         <img src="../mainicon/time.png" alt="hotel" width="70"> 
         <div class="btntext">Book a Room at Go Hotels <br/> Otis Manila Today! </div>  
     </button>
@@ -379,8 +384,7 @@
 </body>
 
 <script>
-new Splide(".whygo", { type : 'loop', }).mount()
-new Splide(".whofor", { type : 'loop', }).mount()
-new Splide(".tosee",{  type : 'loop', }).mount()
+new Splide(".whygo", { type : 'loop',autoplay: true }).mount()
+new Splide(".whofor", { type : 'loop',autoplay: true }).mount() 
 </script>
 </html>
