@@ -101,7 +101,7 @@
         position: unset; 
         padding-left:10%; 
         padding-right: 10%;
-    }
+    } 
     .carousel-inner {
         background-color: #f37021;
         border-bottom-left-radius: 15px;
@@ -110,6 +110,12 @@
     .carousel-control {
         width: 10%;
         border-radius: 0 0 14px 14px;
+    }
+    .glyphicon-chevron-left:before {
+        content: "\e257";
+    }
+    .glyphicon-chevron-right:before {
+        content: "\e258";
     }
 
     @media only screen and (max-width: 700px) { 
@@ -138,10 +144,6 @@
         }
         .prsgtext {
             font-size: 14px;
-        }  
-        .row {
-             margin-right: 15px; 
-             margin-left: 15px; 
         }
         .modal {
             padding-left: 0;
@@ -195,7 +197,7 @@
             <div class="carousel-inner" role="listbox" >
             <div class="item active"> 
                 <div class="carousel-caption" >
-                    <h3> A Seamless Booking Experience</h3>
+                    <h3>A Seamless Booking Experience</h3>
                     <p>You’ll be able to experience Go Hotels’ signature speed, convenience, and quality of service as soon as you book a room. Simply use our website to reserve a room on your preferred date and pay via credit card, bank deposit, or e-wallet transfer. It will be that easy to finalize your accommodations for a comfy stay in Go Hotels Otis Manila. </p>
                 </div>
             </div>
@@ -287,11 +289,11 @@
 
     <!-- Controls -->
     <a class="left carousel-control" href="#whocarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-left"  aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#whocarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
     <span class="sr-only">Next</span>
     </a>
 </div>
