@@ -32,7 +32,7 @@
         font-weight: 400;
         font-size: 22px;
         line-height: 1.67;
-        letter-spacing: 8;
+        letter-spacing: 3;
         max-width: 1500px;
         padding: 0 15px; 
         text-align: center;
@@ -84,6 +84,15 @@
         color: #343434;
         margin: 20px auto;
     } 
+    @media screen and (max-width: 750px) {
+        .headbg p { 
+            font-size: 18px; 
+            letter-spacing: 2; 
+        }
+        .headbg a {
+            margin-top: 40px;
+        }
+    }
 </style>
 <body>
     <header>
@@ -218,7 +227,9 @@
     </section>
     <footer>
         <!-- for presentation only -->
-        <div style="height: 500px; width: 100%; background-color: gray;"></div>
+        <div style="margin: auto; height: 514px;  background: url(../media/footersumit.png); background-size: cover;">
+            <div class="overlay">Footer Section <br> View only</div>
+        </div>
     </footer>
 </body>
 </html>
