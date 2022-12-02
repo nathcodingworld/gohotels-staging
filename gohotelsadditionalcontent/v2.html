@@ -18,6 +18,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 <style>
+    @font-face {
+        font-family: "semringah";
+        src: url("/Fonts/Semringah.ttf");
+    }
     html, body {
         margin: 0;
         padding: 0;
@@ -30,7 +34,7 @@
         padding: 100px 0;
     }  
     .hrsgtext {
-        font-family: Semringah;
+        font-family: semringah;
         font-size: 25px;
         font-weight: 400;
         font-stretch: normal;
@@ -72,6 +76,9 @@
     }
     .modal-body {
         padding: 0;
+        background-color: #FFFAEB ;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 40px;
     } 
     .btntext {
         padding: 0;
@@ -84,7 +91,8 @@
         padding: 0;
     }
     p.prsgtext {
-        margin: 15px 40px;
+        margin: 0px 40px;
+        padding: 15px 0;
     }
     .modal-header .close {
         background: #f37021;
@@ -101,9 +109,12 @@
         position: unset; 
         padding-left:10%; 
         padding-right: 10%;
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
     } 
     .carousel-inner {
-        background-color: #f37021;
+        background-color: #FFFAEB;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
@@ -120,16 +131,51 @@
     .glyphicon-chevron-right:before {
         content: "\e258";
     }
+    .booknowrapper {
+        width: 100%;
+        padding-bottom: 15px;
+    }
     .booknow {
         line-height: 3;
         background-color: #00a84f;
         width: max-content;
         margin:auto;
-        margin-bottom: 10px;
-        padding: 0 30px;
-        color: white;
+        padding: 0 30px; 
         font-weight: 500;
-        border-radius: 4px;
+        border-radius: 4px; 
+    }
+    .booknow a {
+        color: white;
+    }
+    .carousel-control {
+        background-image: none !important;
+    }
+    .carousel-control .glyphicon  {
+        background-color: #f37021;
+        border-radius: 20px;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-indicators li {
+        background: #D0D0D0;
+    }
+    .carousel-indicators li.active {
+        background: #f37021 ;
+    }
+    .carousel-caption h3 {
+        color: #f37021;
+        font-family: semringah;
+        font-size: 24px;
+        text-shadow: none;
+    }
+    .carousel-caption p {
+        color: #333333;
+        font-size: 16px;
+        text-shadow: none;
+        line-height: 26px;
     }
     @media only screen and (max-width: 700px) { 
         .hrsgtext { 
@@ -210,30 +256,52 @@
             <div class="carousel-inner" role="listbox" >
             <div class="item active"> 
                 <div class="carousel-caption" >
-                    <h3>A Seamless Booking Experience</h3>
-                    <p>You’ll be able to experience Go Hotels’ signature speed, convenience, and quality of service as soon as you book a room. Simply use our website to reserve a room on your preferred date and pay via credit card, bank deposit, or e-wallet transfer. It will be that easy to finalize your accommodations for a comfy stay in Go Hotels Otis Manila. </p>
+                    <div class="caption-icon">
+                        <img src="../mainicon/check-in.png" height="100px">
+                    </div>
+                    <div class="detail">
+                        <h3>A Seamless Booking Experience</h3>
+                        <p>You’ll be able to experience Go Hotels signature speed, convenience, and quality of service as soon as you book a room. Simply use our website to reserve a room on your preferred date and pay via credit card, bank deposit, or e-wallet transfer. It will be that easy to finalize your accommodations for a comfy stay in Go Hotels Otis Manila. </p>
+                    </div>
                 </div>
             </div>
             <div class="item"> 
                 <div class="carousel-caption" >
-                    <h3>A Standard of Service That You Can Rely On</h3>
-                    <p>One of the advantages of staying in a hotel over staying in an alternative type of accommodation, like an apartment rental, is your access to standardized hotel services like housekeeping. You can be assured of a clean room, 24/7 hotel security, and round-the-clock assistance from Go Hotels Otis Manila’s friendly and well-trained staff. </p>
+                    <div class="caption-icon">
+                        <img src="../mainicon/clean.png" height="100px">
+                    </div>
+                    <div class="detail">
+                        <h3>A Standard of Service That You Can Rely On</h3>
+                        <p>One of the advantages of staying in a hotel over staying in an alternative type of accommodation, like an apartment rental, is your access to standardized hotel services like housekeeping. You can be assured of a clean room, 24/7 hotel security, and round-the-clock assistance from Go Hotels Otis Manila’s friendly and well-trained staff. </p>
+                    </div>
                 </div>
             </div>
             <div class="item"> 
                 <div class="carousel-caption" >
-                    <h3>A New Way to Experience the City of Manila</h3>
-                    <p>Staying at Go Hotels Otis Manila will allow you to look at the City of Manila through new eyes, even if you have a modest budget. Check in today and enjoy the opportunity to go explore more of the city, immersing yourself in the heart of Manila through its commerce, culture, and cuisine.  </p>
+                    <div class="caption-icon">
+                        <img src="../mainicon/city.png" height="100px"> 
+                    </div>
+                    <div class="detail">
+                        <h3>A New Way to Experience the City of Manila</h3>
+                        <p>Staying at Go Hotels Otis Manila will allow you to look at the City of Manila through new eyes, even if you have a modest budget. Check in today and enjoy the opportunity to go explore more of the city, immersing yourself in the heart of Manila through its commerce, culture, and cuisine.  </p>
+                    </div>
                 </div>
             </div>
             <div class="item"> 
                 <div class="carousel-caption" >
-                    <h3>Excellent Location</h3>
-                    <p>Go Hotels Otis Manila is a stone’s throw away from Robinsons Otis shopping mall, which houses establishments like drugstores, retail outlets, and restaurants. It is also within close proximity to eateries, government agencies, churches like Our Lady of Peñafrancia Parish and Santa Maria Goretti Parish, and tourist attractions like Paco Park, Rizal Park, and the Manila Baywalk. Enjoy quick access to essential goods and services in the Paco area, as well as a taste of Manila City’s old-world charm and nightlife</p>
+                    <div class="caption-icon">
+                        <img src="../mainicon/location.png" height="100px"> 
+                    </div>
+                    <div class="detail">
+                        <h3>Excellent Location</h3>
+                        <p>Go Hotels Otis Manila is a stone’s throw away from Robinsons Otis shopping mall, which houses establishments like drugstores, retail outlets, and restaurants. It is also within close proximity to eateries, government agencies, churches like Our Lady of Peñafrancia Parish and Santa Maria Goretti Parish, and tourist attractions like Paco Park, Rizal Park, and the Manila Baywalk. Enjoy quick access to essential goods and services in the Paco area, as well as a taste of Manila City’s old-world charm and nightlife</p>
+                    </div>
                 </div>
             </div>
-            <div class="booknow" onclick="openBooknow()">BOOK NOW</div>
+            <div class="booknowrapper">
+                <div class="booknow"><a href="https://www.secure-booking-engine.com/accounts/9on3o6TIPNegBR096GVlyg/properties/l-9N4raAqXsgfDSyiD6mng/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/" role="button">BOOK NOW</a></div>
             </div>
+        </div>
         
             <!-- Controls -->
             <a class="left carousel-control" href="#whycarousel" role="button" data-slide="prev">
@@ -275,29 +343,51 @@
     <div class="carousel-inner" role="listbox" >
     <div class="item active"> 
         <div class="carousel-caption" >
-            <h3> A Business Trip to See Manila-Based Clients or Business Partners</h3>
-            <p>We also welcome business travelers who want affordable but work-conducive accommodations for their upcoming business trips. If you’re in Manila to ink a business deal, visit your company headquarters in the city, or attend an industry event, consider checking into Go Hotels Otis Manila and making it your home base for the duration of your visit.  </p>
+            <div class="caption-icon">
+                <img src="../mainicon/busy.png" height="100px">
+            </div>
+            <div class="detail">
+                <h3> A Business Trip to See Manila-Based Clients or Business Partners</h3>
+                <p>We also welcome business travelers who want affordable but work-conducive accommodations for their upcoming business trips. If you’re in Manila to ink a business deal, visit your company headquarters in the city, or attend an industry event, consider checking into Go Hotels Otis Manila and making it your home base for the duration of your visit.  </p>
+            </div>
         </div>
     </div>
     <div class="item"> 
         <div class="carousel-caption" >
-            <h3>A Solo Adventure</h3>
-            <p>For a solo walking tour of Manila or other similar adventure, it will make sense for you to choose accommodations that are light on your wallet. If you don’t anticipate spending too much time at the hotel and need just enough for a good night’s rest, then a budget room at Go Hotels Otis Manila is ideal.  </p>
+            <div class="caption-icon">
+                <img src="../mainicon/solo.png" height="100px"> 
+            </div>
+            <div class="detail">
+                <h3>A Solo Adventure</h3>
+                <p>For a solo walking tour of Manila or other similar adventure, it will make sense for you to choose accommodations that are light on your wallet. If you don’t anticipate spending too much time at the hotel and need just enough for a good night’s rest, then a budget room at Go Hotels Otis Manila is ideal.  </p>
+            </div>
         </div>
     </div>
     <div class="item"> 
         <div class="carousel-caption" >
-            <h3>A Romantic Weekend Getaway</h3>
-            <p>Go Hotels Otis Manila is also a great choice for a relaxed couple who want to spend some time away from the world. Treat your partner to a simple but restful vacation at our hotel in Paco.  </p>
+            <div class="caption-icon">
+                <img src="../mainicon/couple.png" height="100px"> 
+            </div>
+            <div class="detail">
+                <h3>A Romantic Weekend Getaway</h3>
+                <p>Go Hotels Otis Manila is also a great choice for a relaxed couple who want to spend some time away from the world. Treat your partner to a simple but restful vacation at our hotel in Paco.  </p>
+            </div>
         </div>
     </div>
     <div class="item"> 
         <div class="carousel-caption" >
-            <h3>A Laid-Back Staycation with Your Friends</h3>
-            <p>You should also consider Go Hotels Otis Manila for a staycation with your barkada. Go on a sightseeing tour, a food crawl, or a night out in one of Manila City’s bars and unwind together back at your hotel room. </p>
+            <div class="caption-icon">
+                <img src="../mainicon/group.png" alt="groups" height="100px">  
+            </div>
+            <div class="detail">
+                <h3>A Laid-Back Staycation with Your Friends</h3>
+                <p>You should also consider Go Hotels Otis Manila for a staycation with your barkada. Go on a sightseeing tour, a food crawl, or a night out in one of Manila City’s bars and unwind together back at your hotel room. </p>
+            </div>
         </div>
     </div>
-    <div class="booknow" onclick="openBooknow()">BOOK NOW</div>
+    <div class="booknowrapper">
+        <div class="booknow"><a href="https://www.secure-booking-engine.com/accounts/9on3o6TIPNegBR096GVlyg/properties/l-9N4raAqXsgfDSyiD6mng/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/" role="button">BOOK NOW</a></div>
+    </div>
     </div>
 
     <!-- Controls -->
@@ -326,18 +416,15 @@
       <div class="modal-body">
         <p class="prsgtext">For single bookings, group bookings, and even bookings on behalf of another person, make a reservation here on Go Hotels Otis Manila’s website. Be sure to check out our Special Offers section for further discounts and promo packages. Score an even better deal on your booking through our seasonal rates, flash sales, or discounts when you support one of our partner establishments. </p>
         <p class="prsgtext">Look forward to a budget hotel experience that will allow you to relax, stay comfortable, and explore the city of Manila on your own terms. Check the room availability and rates for your preferred dates, and reserve your room at Go Hotels Otis Manila!</p>
-      </div>
-      <div class="booknow" onclick="openBooknow()">BOOK NOW</div>
+        <div class="booknowrapper">
+            <div class="booknow"><a href="https://www.secure-booking-engine.com/accounts/9on3o6TIPNegBR096GVlyg/properties/l-9N4raAqXsgfDSyiD6mng/booking-engine/web/source/4wsctBw6Oq6j-g9XuxeRzQ/" role="button">BOOK NOW</a></div>
+        </div>
+    </div>
     </div>
   </div>
 </div>
 </div>
     
-</body>
-<script>
-    function openBooknow () {
-        alert("BOOK NOW Button Trigger")
-    }
-</script>
+</body> 
  
 </html>
